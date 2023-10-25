@@ -1,0 +1,164 @@
+/* :root{ */
+/*     --black: #1F1E1C; */
+/*     --bg_dim: #242120; */
+/*     --bg0: #312C2B; */
+/*     --bg1: #393230; */
+/*     --bg2: #413937; */
+/*     --bg3: #49403C; */
+/*     --bg4: #4E433F; */
+/*     --gray_dim: #6A5E59; */
+/*     --red: #F86882; */
+/*     --orange: #F08D71; */
+/*     --yellow: #F0c66F; */
+/*     --green: #A6CD77; */
+/*     --blue: #81D0C9; */
+/*     --purple: #9FA0E1; */
+/*     --fg: #E4E3E1; */
+/*     --gray: #90817B; */
+/*     --bg_red: #FD6883; */
+/*     --diff_red: #55393D; */
+/*     --diff_green: #394634; */
+/*     --bg_green: #ADDA78; */
+/*     --bg_blue: #85DAD2; */
+/*     --diff_blue: #354157; */
+/*     --diff_yellow:#4E432F; */
+/* } */
+* {
+    /* Bar measurement icons: https://github.com/and3rson/graph-bars-font */
+    /* Icon set: https://fontawesome.com/v5.15/how-to-use/on-the-desktop/setup/getting-started */
+    font-family:'FiraCode Nerd Font Mono';
+    font-size: 16px;
+    color: #777777;
+}
+ 
+.bar {
+    background: rgba(29, 32, 33, 0.9);
+    border: 0px solid #777777;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 0 4px;
+}
+ 
+.container-right .widget {
+  margin: 4px;
+  border-radius: 3 5px;
+    border: 0px solid #3c4968;
+    padding: 0 6px;
+}
+ 
+.container-right .widget * {
+  color: #777777;
+}
+.komorebi-workspaces {
+  margin-left: 1px;
+}
+ 
+.ws-btn {
+    padding: 5px;
+    background: rgba(60, 56, 54, 0.5);
+    border: 1px solid rgba(168, 153, 132, 0);
+    margin: 0px 2px;
+    font-size: 12px;
+    border-radius: 4px;
+}
+ 
+.ws-btn:hover {
+    color: #777777;
+    font-weight: bold;
+}
+ 
+.ws-btn.populated {
+    color: #777777;
+}
+ 
+.ws-btn.active {
+    background: rgba(251, 241, 199, 0.09);
+    border-color: #777777;
+    color: #777777;
+}
+ 
+/* .custom-widget {
+    padding: 2px 6px;
+    font-size: 14px;
+    background: #312C2B;
+}
+/* .custom-widget .icon {
+  font-size: 13px;
+}
+.custom-widget:hover {
+  background: #413937;
+}
+.custom-widget .icon.icon-left {
+    margin-right: 5px;
+}
+.custom-widget .icon.icon-right {
+    margin-left: 5px;
+}
+/* .custom-widget.hostname-widget { */
+/*     background: #83a598; */
+/* } */
+/**/
+/* .custom-widget.terminal-widget { */
+/*     font-size: 14px; */
+/* } */
+ 
+/* .cpu-widget .label, */
+/* .memory-widget .label, */
+/* .battery-widget .label { */
+/*   padding: 2px 5px; */
+/*   font-size: 14px; */
+/*   border-radius: 5px; */
+/* } */
+/**/
+/* .cpu-widget .label { */
+/*   background: #d3869b; */
+/* } */
+/**/
+/* .battery-widget .label.status-critical { */
+/*   background: #fb4934; */
+/* } */
+/* .battery-widget .label.status-low { */
+/*   background: #fe8019; */
+/* } */
+/* .battery-widget .label.status-medium { */
+/*   background: #fabd2f; */
+/* } */
+/* .battery-widget .label.status-high { */
+/*   background: #b8bb26; */
+/* } */
+/* .battery-widget .label.status-full { */
+/*   background: #8ec07c; */
+/* } */
+/* .battery-widget .label.status-charging { */
+/*   background: #8ec07c; */
+/* } */
+/* .battery-widget, */
+/* .memory-widget { */
+/*   margin: 0; */
+/* } */
+/**/
+/* .memory-widget .label.status-low { */
+/*   background: #689d6a; */
+/* } */
+/* .memory-widget .label.status-medium { */
+/*   background: #fe8019; */
+/* } */
+/* .memory-widget .label.status-high { */
+/*   background: #cc241d; */
+/* } */
+.active-window-widget {
+  margin-left: 0px;
+}
+/* .active-window-widget .label {
+  padding: -5px 7px 0 7px;
+  color: #90817B;
+  background: #3e4547;
+  margin-bottom: -1px;
+  border-radius: 3px;
+  margin: 2px;
+} */
+ 
+.komorebi-active-layout .label {
+  color: #777777;
+  margin: -4px 2px 2px 8px; 
+}

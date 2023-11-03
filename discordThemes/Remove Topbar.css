@@ -1,0 +1,13 @@
+/**
+ * @name rm Bar
+ * @author abc123id
+ * @version 1
+ * @description a simple CSS file for removing the topbar present in discord, experimental
+ * @source nil
+ * 
+*/
+
+}
+div[class*="titleBar-"] {
+    display: none !important;
+}

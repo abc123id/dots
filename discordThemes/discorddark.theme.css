@@ -1,0 +1,86 @@
+/**
+ * @name Discord Dark
+ * @description A Github Dark Theme for Discord, meant to be used with Discord Dark Mode
+ * @author SyndiShanX
+ * @authorLink https://github.com/SyndiShanX
+ * @version 1.37
+ * @website https://syndishanx.github.io/Discord-Dark
+ * @source https://github.com/SyndiShanX/Discord-Dark
+*/
+
+/* Main Theme File */
+@import url(https://syndishanx.github.io/Discord-Dark/discorddark.css);
+
+/* Icons by Mwittrien */
+@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/SettingsIcons.css);
+
+/* Plugins/Themes Counter - Skamt */
+@import url("https://raw.githack.com/Skamt/BDAddons/main/CSS/AddonsCounter.css");
+
+/* Server Rings - Gibbu */
+@import url("https://discordstyles.github.io/SoftX/ServerRings.css");
+
+/* Normalized Forums - Disease */
+@import url(https://maendisease.github.io/BetterDiscordStuff/css/NormalizedForums.css);
+
+/* Spotify Activity Redesign - DaBluLite */
+@import url("https://dablulite.github.io/css-snippets/SpotifyActivityRedesign/import.css");
+
+/* Old Discord Font - Overimagine */
+@import url(https://cdn.jsdelivr.net/gh/Overimagine1/old-discord-font/source.min.css);
+
+:root {
+	--theme: Discord Dark by SyndiShanX;                           /* Replaces Default Discord Colors                                        */
+	--background-primary: rgba(0, 0, 0, 0);                        /*                                                                        */
+	--background-secondary: #1a1a1a;                               /*                                                                        */
+	--background-tertiary: rgba(0, 0, 0, 0.5);                     /*                                                                        */
+	--border-primary: #5c5c5c;                                     /*                                                                        */
+	--border-secondary: #c0c0c0;                                   /*                                                                        */
+	--control-brand-foreground: #3a496b!important;                 /* Category Title Text Color                                              */
+	--category-title-text-color: #3973AC;                          /* Channel State Text Colors                                              */
+	--unread-channel-text: #ffffff;                                /*                                                                        */
+	--default-channel-text: #949BA4;                               /*                                                                        */
+	--muted-channel-text: #4E5058;                                 /*                                                                        */
+	--brand-experiment: #3a496b!important;                         /* Selection Colors                                                       */
+	--selection-background: #265d96;                               /*                                                                        */
+	--selection-text: #ffffff;                                     /* Red Button Colors                                                      */
+	--red-button: #712828;                                         /*                                                                        */
+	--red-button-hover: #973535;                                   /*                                                                        */
+	--red-button-border: #ba1212;                                  /* Green Button Colors                                                    */
+	--green-button: #508055;                                       /*                                                                        */
+	--green-button-hover: #629d68;                                 /*                                                                        */
+	--green-button-border: #00b344;                                /* Blue Button Colors                                                     */
+	--blue-button: #2e3952;                                        /*                                                                        */
+	--blue-button-hover: #3a496b;                                  /*                                                                        */
+	--blue-button-border: #265d96;                                 /* White Button Colors                                                    */
+	--white-button: #ffffff;                                       /*                                                                        */
+	--white-button-hover: #dedede;                                 /*                                                                        */
+	--white-button-border: #808080;                                /* Gray Button Colors                                                     */
+	--gray-button: #4f545c;                                        /*                                                                        */
+	--gray-button-hover: #646970;                                  /*                                                                        */
+	--gray-button-border: #919599;                                 /* Orange Button Colors                                                   */
+	--orange-button: #A54829;                                      /*                                                                        */
+	--orange-button-hover: #C65731;                                /*                                                                        */
+	--orange-button-border: #CC4300;                               /* Gift and GIF Buttons (none | block)                                    */
+	--GIFtButtons: none;                                           /* Icons Size                                                             */
+	--settingsiconssize: 18px;                                     /* Icons Gap                                                              */
+	--settingsiconsgap: 14px;                                      /* Settings Sidebar Width                                                 */
+	--sidebar-width: 245px;                                        /* Scrollbar Slider Color                                                 */
+	--scrollbar-color: rgba(55, 55, 55, 0.5);                      /* Scrollbar Slider Hover Color                                           */
+	--scrollbar-hover-color: rgba(75, 75, 75, 1);                  /* Scrollbar Width                                                        */
+	--scrollbar-width: 8px;                                        /* Server Rings - Unread Color                                            */
+	--server-unread-colour: 194, 178, 60;                          /* Server Rings - Hover Color                                             */
+  --server-hover-colour: 186, 186, 186;                          /* Server Rings - Selected Color                                          */
+  --server-selected-colour: var(--accent, 53, 175, 234);         /* Server Rings - Spacing                                                 */
+  --server-spacing: 16px;                                        /* Server Rings - Glow Intensity                                          */
+  --server-glow-intensity: 1;                                    /* Discord Opacity | Transparency Needs to be Enabled                     */
+	--discord-opacity: 0.9;                                        /* Images are Stored here to improve Loading times, more info in css file */	
+	/*
+		Images are Stored here to improve Loading times, to get the Image Code:
+	  Open https://codebeautify.org/image-to-base64-converter in a Browser, Upload the Image,
+		Copy the Base64 String, then Replace one of the below Images with `url('data:image/png;base64,BASE64_STRING')`
+	*/
+	--bgImage: url(https://i.ibb.co/jgHG158/0062.jpg));
+	--bgDarkness2: url(https://i.ibb.co/jgHG158/0062.jpg));
+	--bgDarkness3: url(https://i.ibb.co/jgHG158/0062.jpg))
+}

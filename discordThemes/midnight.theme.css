@@ -1,0 +1,68 @@
+/**
+ * @name midnight
+ * @description A darkened discord theme.
+ * @author refact0r
+ * @version 1.5.1
+ * @source https://github.com/refact0r/midnight-discord
+ * @authorId 508863359777505290
+*/
+
+/* IMPORTANT: make sure to enable dark mode in discord settings for the theme to apply properly!! */
+
+@import url('https://refact0r.github.io/midnight-discord/midnight.css');
+
+/* change colors and variables here */
+:root {
+	/* amount of spacing and padding */
+	--spacing: 12px;
+	/* radius of round corners */
+	--roundness: 16px;
+
+	/* color of links */
+	--accent-1: hsl(190, 80%, 60%);
+	/* color of unread dividers and some indicators */
+	--accent-2: hsl(190, 80%, 48%);
+	/* color of accented buttons */
+	--accent-3: hsl(190, 80%, 42%);
+	/* color of accented buttons when hovered */
+	--accent-4: hsl(190, 80%, 36%);
+	/* color of accented buttons when clicked */
+	--accent-5: hsl(190, 80%, 30%);
+
+	/* color of green online dot, discord default is #23a55a */
+	--online-indicator: var(--accent-2);
+
+	/* color of mentions and messages that mention you */
+	--mention: hsla(190, 80%, 52%, 0.08);
+	/* color of mentions and messages that mention you when hovered */
+	--mention-hover: hsla(190, 80%, 52%, 0.05);
+
+	/* color of bright text on colored buttons */
+	--text-1: hsl(220, 40%, 90%);
+	/* color of headings and important text */
+	--text-2: hsl(220, 25%, 70%);
+	/* color of normal text */
+	--text-3: hsl(220, 15%, 60%);
+	/* color of icon buttons and channels */
+	--text-4: hsl(220, 15%, 40%);
+	/* color of muted channels/chats and timestamps */
+	--text-5: hsl(220, 15%, 25%);
+
+	/* color of dark buttons when clicked */
+	--bg-1: hsl(220, 15%, 20%);
+	/* color of dark buttons */
+	--bg-2: hsl(220, 15%, 16%);
+	/* color of spacing around panels and secondary elements */
+	--bg-3: hsl(220, 15%, 13%);
+	/* main background color */
+	--bg-4: hsl(220, 15%, 10%);
+
+	/* color of channels and icon buttons when hovered */
+	--hover: hsla(230, 20%, 40%, 0.1);
+	/* color of channels and icon buttons when clicked or selected */
+	--active: hsla(220, 20%, 40%, 0.2);
+	/* color of messages when hovered */
+	--message-hover: hsla(220, 0%, 0%, 0.1);
+    --font: "Inter"; /* Custom font | Default: 'Inter' */
+    
+}

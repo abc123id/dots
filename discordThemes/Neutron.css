@@ -1,0 +1,26 @@
+@import url("https://discordstyles.github.io/SoftX/VerticalUserArea.css");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap");
+@import url('https://raw.githubusercontent.com/abc123id/dots/main/supercustom.css');
+@import url("https://discordstyles.github.io/SoftX/RadialGlow.css");
+:root {
+  --backgroundImage: url('https://i.ibb.co/jgHG158/0062.jpg');
+  --backgroundColor: #0d0d0d;
+  --backgroundSize: cover;
+  --backgroundPosition: center;
+  --backgroundRepeat: no-repeat;
+  --backgroundBlur: 1px;
+  --backgroundOpacity: 0.9;
+  --homeImage: url('https://tr.rbxcdn.com/30DAY-AvatarHeadshot-F9C02651A2F26B7B36D36B57557BCB80-Png/150/150/AvatarHeadshot/Png/noFilter');
+  --homeImageSize: cover;
+  --themeColor1: #36D1DC;
+  --themeColor2: #5B86E5;
+  --customFont: Inter;
+  --backgroundCode: rgba(0 0 0 0.5);
+  --backgroundName: rgba(0 0 0 0.5);
+}
+div[class*="titleBar-"] {
+    display: none !important;
+}
+
+
+/* Any custom CSS below here */

@@ -26,61 +26,62 @@
 * {
     /* Bar measurement icons: https://github.com/and3rson/graph-bars-font */
     /* Icon set: https://fontawesome.com/v5.15/how-to-use/on-the-desktop/setup/getting-started */
-    font-family:'FiraCode Nerd Font Mono';
+    font-family:'CaskaydiaCove NF';
     font-size: 16px;
-    color: #777777;
+    color: #a9b1d6;
 }
  
 .bar {
-    background: rgba(29, 32, 33, 0.9);
-    border: 0px solid #777777;
+    background: rgba(26, 27, 38, 0.9);
+    border: 0px solid #f8f8f9;
     border-radius: 10px;
     margin: 2px;
     padding: 0 4px;
 }
  
 .container-right .widget {
-  margin: 4px;
+  margin: 0px;
   border-radius: 3 5px;
-    border: 0px solid #3c4968;
+    border: 0px solid #a9b1d6;
     padding: 0 6px;
 }
  
 .container-right .widget * {
-  color: #777777;
+  color: #a9b1d6;
 }
 .komorebi-workspaces {
   margin-left: 1px;
 }
  
 .ws-btn {
-    padding: 5px;
-    background: rgba(60, 56, 54, 0.5);
-    border: 1px solid rgba(168, 153, 132, 0);
-    margin: 0px 2px;
-    font-size: 12px;
+    padding: 4px;
+    background: rgba(36, 40, 59, 0.5);
+    border: 0px solid #a9b1d6;
+    margin: 0px 4px;
+    font-size: 14px;
     border-radius: 4px;
 }
  
 .ws-btn:hover {
-    color: #777777;
+    color: #a9b1d6;
+    background: #414868;
     font-weight: bold;
 }
  
 .ws-btn.populated {
-    color: #777777;
+    color: #a9b1d6;
 }
  
 .ws-btn.active {
     background: rgba(251, 241, 199, 0.09);
-    border-color: #777777;
-    color: #777777;
+    border-color: #a9b1d6;
+    color: #a9b1d6;
 }
  
-/* .custom-widget {
-    padding: 2px 6px;
+ .custom-widget {
+    padding: 2px 12px;
     font-size: 14px;
-    background: #312C2B;
+    background: rgba( 0,0,0,0);
 }
 /* .custom-widget .icon {
   font-size: 13px;
@@ -159,6 +160,6 @@
 } */
  
 .komorebi-active-layout .label {
-  color: #777777;
+  color: #a9b1d6;
   margin: -4px 2px 2px 8px; 
 }

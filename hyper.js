@@ -9,9 +9,9 @@ module.exports = {
         // or `'canary'` for less polished but more frequent updates
         updateChannel: 'stable',
         // default font size in pixels for all tabs
-        fontSize: 13,
+        fontSize: 14,
         // font family with optional fallbacks
-        fontFamily: 'Firacode Nerd Font Mono',
+        fontFamily: 'CaskaydiaCove Nerd Font',
         // default font weight: 'normal' or 'bold'
         fontWeight: 'normal',
         // font weight for bold characters: 'normal' or 'bold'
@@ -19,7 +19,7 @@ module.exports = {
         // line height as a relative unit
         lineHeight: 1,
         // letter spacing as a relative unit
-        letterSpacing: 0,
+        letterSpacing: 1,
         // terminal cursor background color and opacity (hex, rgb, hsl, hsv, hwb or cmyk)
         cursorColor: 'rgba(25,150,255,0.8)',
         // terminal text color under BLOCK cursor
@@ -52,8 +52,8 @@ module.exports = {
         showWindowControls: false,
         // change opacity
         opacity: {
-      focus: 0.9,
-      blur: 0.5
+      focus: 1,
+      blur: 1
     },
         // custom padding (CSS format, i.e.: `top right bottom left`)
         padding: '12px 14px',
@@ -117,6 +117,7 @@ module.exports = {
         bell: 'SOUND',
         // An absolute file path to a sound file on the machine.
         // bellSoundURL: '/path/to/sound/file',
+        bellSoundURL: 'C:\Users\conno\Sounds\Barcode scanner beep sound (sound effect).mp3',
         // if `true` (without backticks and without quotes), selected text will automatically be copied to the clipboard
         copyOnSelect: false,
         // if `true` (without backticks and without quotes), hyper will be set as the default protocol client for SSH
@@ -153,7 +154,7 @@ module.exports = {
     plugins: [
         "hyper-opacity",
         "hyperline",
-        "hyper-snazzy",
+        "hyper-tokyo-night",
         "hyperborder"
     ],
     // in development, you can create a directory under

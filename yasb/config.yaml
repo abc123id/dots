@@ -87,14 +87,14 @@ bars:
       windows_app_bar: true
     dimensions:
       width: "100%"
-      height: 38
+      height: 38 
     padding:
       top: 2
       left: 2
-      bottom: 2
+      bottom: 0
       right: 2
     widgets:
-      left:   ["komorebi_workspaces", "komorebi_active_layout", "clock"]
+      left:   ["komorebi_workspaces", "komorebi_active_layout", "clock", "explorer_button"]
       center: ["active_window"]
       right:  ["weather", "wifi", "cpu", "memory", "battery"]
 
@@ -427,7 +427,7 @@ widgets:
       hide_if_offline: false
       label: "{icon}"
       layout_icons:
-        bsp: "[\\\\]"
+        bsp: "[ \\\\ ]"
         columns: "[||]"
         rows: "[==]"
         vertical_stack: "[V]="
@@ -464,13 +464,13 @@ widgets:
   explorer_button:
     type: "yasb.custom.CustomWidget"
     options:
-      label: "\uf07c"
-      label_alt: "Explorer"
+      label: "\uebc7"
+      label_alt: "[Press to open a Terminal instance]"
       class_name: "explorer-widget"
       exec_options:
         run_once: true
       callbacks:
-        on_left: "exec explorer.exe"
+        on_left: "exec wt"
         on_right: "toggle_label"
 
   ip_info:

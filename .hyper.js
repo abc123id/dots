@@ -158,6 +158,7 @@ module.exports = {
         "hyperterm-dibdabs",
         "hyperterm-tabs",
         "hyperborder",
+	"hyper-mac-controls",
         "hyper-search"
     ],
     // in development, you can create a directory under

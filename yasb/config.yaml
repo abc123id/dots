@@ -87,14 +87,14 @@ bars:
       windows_app_bar: true
     dimensions:
       width: "100%"
-      height: 38 
+      height: 28 
     padding:
-      top: 2
+      top: 0
       left: 2
       bottom: 0
       right: 2
     widgets:
-      left:   ["komorebi_workspaces", "komorebi_active_layout", "clock", "explorer_button"]
+      left:   ["explorer_button", "komorebi_workspaces", "komorebi_active_layout", "clock"]
       center: ["active_window"]
       right:  ["weather", "wifi", "cpu", "memory", "battery"]
 
@@ -365,8 +365,8 @@ widgets:
     options:
       label: "{win[title]}"
       label_alt: "[class_name='{win[class_name]}' exe='{win[process][name]}' hwnd={win[hwnd]}]"
-      label_no_window: ""
-      max_length: 48
+      label_no_window: "Desktop"
+      max_length: 64
       max_length_ellipsis: "..."
       monitor_exclusive: false
 
@@ -428,12 +428,12 @@ widgets:
       label: "{icon}"
       layout_icons:
         bsp: "[ \\\\ ]"
-        columns: "[||]"
-        rows: "[==]"
-        vertical_stack: "[V]="
+        columns: "\udb81\udd6d "
+        rows: "\uf50b "
+        vertical_stack: " \udb82\ude07 \udb86\udeb6 "
         horizontal_stack: "[H]="
-        ultrawide_vertical_stack: "||="
-        monocle: "[ML]"
+        ultrawide_vertical_stack: " \uf0db \udb82\udc35 "
+        monocle: " \udb84\ude76 "
         maximised: "[MX]"
         floating: "[FL]"
         paused: "[DISPLAY ERROR! RESTART yasb & komorebi]"
@@ -464,8 +464,8 @@ widgets:
   explorer_button:
     type: "yasb.custom.CustomWidget"
     options:
-      label: "\uebc7"
-      label_alt: "[Press to open a Terminal instance]"
+      label: "\ue73c \ue0b1"
+      label_alt: "[Press to open the default terminal...] \ue0b1"
       class_name: "explorer-widget"
       exec_options:
         run_once: true

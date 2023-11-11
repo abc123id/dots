@@ -27,16 +27,16 @@
     /* Bar measurement icons: https://github.com/and3rson/graph-bars-font */
     /* Icon set: https://fontawesome.com/v5.15/how-to-use/on-the-desktop/setup/getting-started */
     font-family:'CaskaydiaCove NF';
-    font-size: 16px;
-    color: #a9b1d6;
+    font-size: 13px;
+    color: #b1bae1;
 }
  
 .bar {
     background: rgba(26, 27, 38, 0.9);
-    border: 0px solid #f8f8f9;
-    border-radius: 10px;
-    margin: 2px;
-    padding: 0 4px;
+    border: 0px solid #b1bae1;
+    border-radius: 1px;
+    margin: 0 0px;
+    padding: 0px;
 }
  
 .container-right .widget {
@@ -47,35 +47,36 @@
 }
  
 .container-right .widget * {
-  color: #a9b1d6;
+  color: #b1bae1;
 }
 .komorebi-workspaces {
-  margin-left: 1px;
+  margin-left: 4px;
 }
  
 .ws-btn {
-    padding: 4px;
+    padding: 3px;
     background: rgba(36, 40, 59, 0.5);
-    border: 0px solid #a9b1d6;
-    margin: 0px 4px;
-    font-size: 14px;
-    border-radius: 4px;
+    border: 0px solid #b1bae1;
+    margin: 0px 3px;
+    font-size: 12px;
+    border-radius: 3px;
 }
  
 .ws-btn:hover {
-    color: #a9b1d6;
+    color: #b1bae1;
     background: #414868;
     font-weight: bold;
 }
  
 .ws-btn.populated {
-    color: #a9b1d6;
+    color: #b1bae1;
 }
  
 .ws-btn.active {
     background: rgba(251, 241, 199, 0.09);
-    border-color: #a9b1d6;
-    color: #a9b1d6;
+    border-color: #b1bae1;
+    border: 1px solid #b1bae1;
+    color: #b1bae1;
 }
  
  .custom-widget {
@@ -83,12 +84,13 @@
     font-size: 14px;
     background: rgba( 0,0,0,0);
 }
-/* .custom-widget .icon {
+ .custom-widget .icon {
   font-size: 13px;
 }
 .custom-widget:hover {
-  background: #413937;
-}
+  background: #414868;
+  font-weight: bold;
+} /*
 .custom-widget .icon.icon-left {
     margin-right: 5px;
 }
@@ -130,9 +132,9 @@
 /* .battery-widget .label.status-full { */
 /*   background: #8ec07c; */
 /* } */
-/* .battery-widget .label.status-charging { */
-/*   background: #8ec07c; */
-/* } */
+ .battery-widget .label.status-charging { 
+   background: rgba( 0,0,0,0); 
+ } 
 /* .battery-widget, */
 /* .memory-widget { */
 /*   margin: 0; */
@@ -160,6 +162,6 @@
 } */
  
 .komorebi-active-layout .label {
-  color: #a9b1d6;
-  margin: -4px 2px 2px 8px; 
+  color: #b1bae1;
+  margin: 0px 4px 4px 0px; 
 }

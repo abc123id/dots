@@ -35,10 +35,10 @@ Set-Alias clear cls
 Set-Alias ref cls
 Set-Alias refresh cls
 Set-Alias cc cls
-Set-Alias ranger lf
+Set-Alias fast fastfetch
+Set-Alias cpu cpufetch
 
 #Loaded Output (Cannot contain spaces)
 
-echo [OK]SystemLoaded
 
 #Profile end

@@ -90,9 +90,9 @@ bars:
       height: 28 
     padding:
       top: 0
-      left: 2
+      left: 0
       bottom: 0
-      right: 2
+      right: 0
     widgets:
       left:   ["explorer_button", "komorebi_workspaces", "komorebi_active_layout", "clock"]
       center: ["active_window"]

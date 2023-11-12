@@ -28,12 +28,12 @@
     /* Icon set: https://fontawesome.com/v5.15/how-to-use/on-the-desktop/setup/getting-started */
     font-family:'CaskaydiaCove NF';
     font-size: 13px;
-    color: #b1bae1;
+    color: #eddbb2;
 }
  
 .bar {
-    background: rgba(26, 27, 38, 0.9);
-    border: 0px solid #b1bae1;
+    background: rgba(40, 40, 40, 0.9);
+    border: 0px solid #eddbb2;
     border-radius: 1px;
     margin: 0 0px;
     padding: 0px;
@@ -42,12 +42,12 @@
 .container-right .widget {
   margin: 0px;
   border-radius: 3 5px;
-    border: 0px solid #a9b1d6;
+    border: 0px solid #eddbb2;
     padding: 0 6px;
 }
  
 .container-right .widget * {
-  color: #b1bae1;
+  color: #eddbb2;
 }
 .komorebi-workspaces {
   margin-left: 4px;
@@ -56,27 +56,27 @@
 .ws-btn {
     padding: 3px;
     background: rgba(36, 40, 59, 0.5);
-    border: 0px solid #b1bae1;
+    border: 0px solid #eddbb2;
     margin: 0px 3px;
     font-size: 12px;
     border-radius: 3px;
 }
  
 .ws-btn:hover {
-    color: #b1bae1;
-    background: #414868;
+    color: #eddbb2;
+    background: #504945;
     font-weight: bold;
 }
  
 .ws-btn.populated {
-    color: #b1bae1;
+    color: #eddbb2;
 }
  
 .ws-btn.active {
     background: rgba(251, 241, 199, 0.09);
-    border-color: #b1bae1;
-    border: 1px solid #b1bae1;
-    color: #b1bae1;
+    border-color: #eddbb2;
+    border: 1px solid #eddbb2;
+    color: #eddbb2;
 }
  
  .custom-widget {
@@ -88,7 +88,7 @@
   font-size: 13px;
 }
 .custom-widget:hover {
-  background: #414868;
+  background: #655c54;
   font-weight: bold;
 } /*
 .custom-widget .icon.icon-left {
@@ -162,6 +162,9 @@
 } */
  
 .komorebi-active-layout .label {
-  color: #b1bae1;
-  margin: 0px 4px 4px 0px; 
+  color: #eddbb2;
+  border: 1px solid #eddbb2;
+  background: #655c54;
+  border-radius: 3px;
+  margin: 3px 4px 4px 0px; 
 }

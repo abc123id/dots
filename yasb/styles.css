@@ -28,13 +28,13 @@
     /* Icon set: https://fontawesome.com/v5.15/how-to-use/on-the-desktop/setup/getting-started */
     font-family:'CaskaydiaCove NF';
     font-size: 13px;
-    color: #eddbb2;
+    color: #A9B1D6;
 }
  
 .bar {
-    background: rgba(40, 40, 40, 0.9);
-    border: 0px solid #eddbb2;
-    border-radius: 1px;
+    background: rgba(30, 30, 46, 0.9);
+    border: 0px solid #A9B1D6;
+    border-radius: 0px;
     margin: 0 0px;
     padding: 0px;
 }
@@ -42,45 +42,48 @@
 .container-right .widget {
   margin: 0px;
   border-radius: 3 5px;
-    border: 0px solid #eddbb2;
-    padding: 0 6px;
+  border: 0px solid #A9B1D6;
+  padding: 0 8px;
 }
  
 .container-right .widget * {
-  color: #eddbb2;
+  color: #A9B1D6;
 }
 .komorebi-workspaces {
-  margin-left: 4px;
+  margin: 4px;
+  background: #1E1E2E;
+  border-radius: 11px;
 }
  
 .ws-btn {
-    padding: 3px;
-    background: rgba(36, 40, 59, 0.5);
-    border: 0px solid #eddbb2;
-    margin: 0px 3px;
+    color: #434655;
+    padding: 5px;
+    background: rgba(36, 40, 59, 0.0);
+    border: 0px solid #A9B1D6;
     font-size: 12px;
     border-radius: 3px;
+    margin: 0 4 3px;
 }
  
 .ws-btn:hover {
-    color: #eddbb2;
-    background: #504945;
+    color: #A9B1D6;
     font-weight: bold;
 }
  
 .ws-btn.populated {
-    color: #eddbb2;
+    color: #8086A3;
 }
  
 .ws-btn.active {
-    background: rgba(251, 241, 199, 0.09);
-    border-color: #eddbb2;
-    border: 1px solid #eddbb2;
-    color: #eddbb2;
+    background: rgba(251, 241, 199, 0);
+    border-color: #A9B1D6;
+    font-weight: bold;
+    border: 0px solid #A9B1D6;
+    color: #A9B1D6;
 }
  
  .custom-widget {
-    padding: 2px 12px;
+    padding: 0px 12px;
     font-size: 14px;
     background: rgba( 0,0,0,0);
 }
@@ -88,7 +91,7 @@
   font-size: 13px;
 }
 .custom-widget:hover {
-  background: #655c54;
+  background: #363654;
   font-weight: bold;
 } /*
 .custom-widget .icon.icon-left {
@@ -162,9 +165,9 @@
 } */
  
 .komorebi-active-layout .label {
-  color: #eddbb2;
-  border: 1px solid #eddbb2;
-  background: #655c54;
+  color: #A9B1D6;
+  border: 1px solid #A9B1D6;
+  background: #363654;
   border-radius: 3px;
-  margin: 3px 4px 4px 0px; 
+  margin: 3px 8px 4px 8px; 
 }

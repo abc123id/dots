@@ -26,52 +26,65 @@
 * {
     /* Bar measurement icons: https://github.com/and3rson/graph-bars-font */
     /* Icon set: https://fontawesome.com/v5.15/how-to-use/on-the-desktop/setup/getting-started */
-    font-family:'CaskaydiaCove NF';
+    font-family:'CaskaydiaCove Nerd Font';
     font-size: 13px;
     color: #A9B1D6;
 }
  
 .bar {
-    background: rgba(30, 30, 46, 0.9);
+    background: rgba(30, 30, 46, 0.85);
     border: 0px solid #A9B1D6;
-    border-radius: 0px;
-    margin: 0 0px;
+    border-radius: 10px;
+    margin: 0 0 4 0px;
     padding: 0px;
 }
- 
-.container-right .widget {
-  margin: 0px;
-  border-radius: 3 5px;
+
+.container-right .label {
+  margin: 0 0 4 0px;
+  border-radius: 0px;
+  background: rgba(0,0,0,0);
   border: 0px solid #A9B1D6;
-  padding: 0 8px;
+  padding: 0px;
+}
+
+
+
+ 
+.container-left .widget {
+  margin: 2 10 6px;
+  border-radius: 0px;
+  background: rgba(0,0,0,0);
+  border: 0px solid #A9B1D6;
+  padding: 0px;
 }
  
 .container-right .widget * {
   color: #A9B1D6;
 }
 .komorebi-workspaces {
-  margin: 4px;
-  background: #1E1E2E;
+  margin: 2 0 6 0px;
+  background: #363654;
   border-radius: 11px;
+  border: 0px solid #A9B1D6;
 }
  
 .ws-btn {
-    color: #434655;
-    padding: 5px;
+    color: #61657B;
+    padding: 3px;
     background: rgba(36, 40, 59, 0.0);
     border: 0px solid #A9B1D6;
-    font-size: 12px;
+    font-size: 13px;
     border-radius: 3px;
-    margin: 0 4 3px;
+    margin: 0 6 0 6px;
 }
  
 .ws-btn:hover {
-    color: #A9B1D6;
+    color: #F7768E;
     font-weight: bold;
 }
  
 .ws-btn.populated {
-    color: #8086A3;
+    color: #7AA2F7;
 }
  
 .ws-btn.active {
@@ -83,11 +96,16 @@
 }
  
  .custom-widget {
-    padding: 0px 12px;
-    font-size: 14px;
-    background: rgba( 0,0,0,0);
 }
- .custom-widget .icon {
+ 
+.container-right .widget {
+  margin: 5px;
+  border-radius: 0px;
+  background: rgba(0,0,0,0);
+  border: 0px solid #A9B1D6;
+  padding: 0 2px;
+}
+ .custom-widget {
   font-size: 13px;
 }
 .custom-widget:hover {
@@ -166,8 +184,8 @@
  
 .komorebi-active-layout .label {
   color: #A9B1D6;
-  border: 1px solid #A9B1D6;
-  background: #363654;
-  border-radius: 3px;
-  margin: 3px 8px 4px 8px; 
+  border: 0px solid #A9B1D6;
+  background: rgba(0,0,0,0);
+  border-radius: 11px;
+  margin: 0px 0px 4px 0px; 
 }

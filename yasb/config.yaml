@@ -90,7 +90,7 @@ bars:
     padding:
       top: 4
       left: 4
-      bottom: 0
+      bottom: 4
       right: 4
     widgets:
       left: ["explorer_button", "memory", "cpu", "clock"]
@@ -426,14 +426,14 @@ widgets:
       hide_if_offline: false
       label: "{icon}"
       layout_icons:
-        bsp: "[ \udb82\ude07 BSP ]"
+        bsp: "[ \udb82\ude07 BINARY SPACE PARTITIONING ]"
         columns: "[ \udb82\ude07 COLUMNS ]"
         rows: "[ \udb82\ude07 ROWS ]"
-        vertical_stack: "[ \udb82\ude07 VERTICAL ]"
-        horizontal_stack: "[ \udb82\ude07 HORIZONTAL ]"
-        ultrawide_vertical_stack: "[ \udb82\ude07 ULTRA ]"
-        monocle: " \udb84\ude76 "
-        maximised: "[MX]"
+        vertical_stack: "[ \udb82\ude07 MASTER-STACK ]"
+        horizontal_stack: "[ \udb82\ude07 HORIZONTAL-STACK ]"
+        ultrawide_vertical_stack: "[ \udb82\ude07 ULTRA-WIDE VERTICAL STACK ]"
+        monocle: " Monocle "
+        maximised: " Maximised "
         floating: "[FL]"
         paused: "[DISPLAY ERROR! RESTART yasb & komorebi]"
       callbacks:
@@ -462,13 +462,13 @@ widgets:
   explorer_button:
     type: "yasb.custom.CustomWidget"
     options:
-      label: "\ue73c \ueb10"
-      label_alt: "[Press to open the default terminal...] \ue0b1"
+      label: "\ue73c \ue216 \ue7a8 \ueb10"
+      label_alt: "\ue73c \ue216 Hello! \ue216 \ue7a8 \ueb10"
       class_name: "explorer-widget"
       exec_options:
         run_once: true
       callbacks:
-        on_left: "exec wt"
+        on_left: "toggle_label"
         on_right: "toggle_label"
 
   ip_info:
@@ -495,5 +495,5 @@ widgets:
       exec_options:
         run_cmd: "curl.exe  wttr.in/Knoxville?format=j1"
         # run every hour
-        run_interval: 3600000
+        run_interval: 600000
         return_format: "json"

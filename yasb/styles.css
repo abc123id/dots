@@ -81,19 +81,17 @@ border: 0px solid #3B4252;
 }
 
 .ws-btn.populated {
-  color: #D8DEE9;
+  color: #88C0D0;
 }
 
 .ws-btn.active {
   background: rgba(251, 241, 199, 0);
-  border-color: #88C0D0;
+  border-color: #D8DEE9;
   font-weight: bold;
   border: 0px solid #88C0D0;
-  color: #88C0D0;
+  color: #D8DEE9;
 }
 
-.custom-widget {
-}
 
 .container-right .widget {
 margin: 5px;

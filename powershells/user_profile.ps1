@@ -23,7 +23,7 @@ Import-Module syntax-highlighting
  ## Prompt
 & ([ScriptBlock]::Create((oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\uew.omp.json" --print) -join "`n"))
 
- ## Cocolately Tab-Autocompletion
+ ## Chocolately Tab-Autocompletion
 
 $ChocolateyProfile = "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
 if (Test-Path($ChocolateyProfile)) {
@@ -56,5 +56,7 @@ function binds {
 function cprofile {
     code C:\users\conno\.config\powershell\user_profile.ps1 
   }
-
+function pipes {
+    pipes-rs -r 0.95
+}
  ## End Of Configuration

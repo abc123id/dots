@@ -3,26 +3,28 @@
   "window_hiding_behaviour": "Cloak",
   "cross_monitor_move_behaviour": "Insert",
   "alt_focus_hack": true,
+  "mouse_follows_focus": true,
+  "focus_follows_mouse": "Komorebi",
   "default_workspace_padding": 6,
   "default_container_padding": 6,
   "active_window_border": true,
-  "active_window_border_width": 8,
-  "active_window_border_offset": -4,
+  "active_window_border_width": 5,
+  "active_window_border_offset": -5,
   "active_window_border_colours": {
     "single": {
-      "r": 125,
-      "g": 207,
-      "b": 255
+      "r": 143,
+      "g": 188,
+      "b": 187
     },
     "stack": {
-      "r": 256,
-      "g": 165,
-      "b": 66
+      "r": 235,
+      "g": 203,
+      "b": 139
     },
     "monocle": {
-      "r": 255,
-      "g": 51,
-      "b": 153
+      "r": 191,
+      "g": 97,
+      "b": 106
     }
   },
   "monitors": [
@@ -34,27 +36,27 @@
         },
         {
           "name": "II",
-          "layout": "BSP"
+          "layout": "VerticalStack"
         },
         {
           "name": "III",
-          "layout": "BSP"
+          "layout": "VerticalStack"
         },
         {
           "name": "IV",
-          "layout": "BSP"
+          "layout": "VerticalStack"
         },
         {
           "name": "V",
-          "layout": "BSP"
+          "layout": "VerticalStack"
         },
         {
           "name": "VI",
-          "layout": "BSP"
+          "layout": "VerticalStack"
         },
         {
           "name": "VII",
-          "layout": "HorizontalStack"
+          "layout": "VerticalStack"
         },
         {
           "name": "VIII",
@@ -62,7 +64,7 @@
         },
         {
           "name": "IX",
-          "layout": "Rows"
+          "layout": "VerticalStack"
         }
       ]
     },
@@ -74,11 +76,11 @@
         },
         {
           "name": "II",
-          "layout": "VerticalStack"
+          "layout": "BSP"
         },
         {
           "name": "III",
-          "layout": "HorizontalStack"
+          "layout": "BSP"
         },
         {
           "name": "IV",
@@ -86,23 +88,23 @@
         },
         {
           "name": "V",
-          "layout": "Columns"
+          "layout": "BSP"
         },
         {
           "name": "VI",
-          "layout": "VerticalStack"
+          "layout": "BSP"
         },
         {
           "name": "VII",
-          "layout": "HorizontalStack"
+          "layout": "BSP"
         },
         {
           "name": "VIII",
-          "layout": "UltrawideVerticalStack"
+          "layout": "BSP"
         },
         {
           "name": "IX",
-          "layout": "Rows"
+          "layout": "BSP"
         }
       ]
     }

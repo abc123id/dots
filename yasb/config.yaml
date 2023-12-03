@@ -86,16 +86,16 @@ bars:
       windows_app_bar: true
     dimensions:
       width: "100%"
-      height: 30
+      height: 38
     padding:
-      top: 4
-      left: 4
-      bottom: 4
-      right: 4
+      top: 0
+      left: 0
+      bottom: 0
+      right: 0
     widgets:
-      left: ["explorer_button", "memory", "cpu", "clock"]
-      center: ["komorebi_workspaces"]
-      right: ["weather", "wifi", "komorebi_active_layout", "battery"]
+      left: ["komorebi_active_layout", "komorebi_workspaces"]
+      center: ["active_window"]
+      right: ["weather", "wifi", "battery", "clock"]
 
 # widgets:
 # my-clock-widget:
@@ -377,8 +377,8 @@ widgets:
   clock:
     type: "yasb.clock.ClockWidget"
     options:
-      label: "\ue384 {%I:%M:%S %p}"
-      label_alt: "\ue384 {%A, %B %d, %Y, %I:%M:%S %Z}"
+      label: "\udb82\udd54 {%I:%M:%S %p}"
+      label_alt: "\udb82\udd54 {%A, %B %d, %Y, %I:%M:%S %Z}"
       timezones: ["America/New_York"]
       callbacks:
         on_middle: "exec explorer.exe shell:Appsfolder\\Microsoft.WindowsAlarms_8wekyb3d8bbwe!App"
@@ -405,8 +405,8 @@ widgets:
   memory:
     type: "yasb.memory.MemoryWidget"
     options:
-      label: "\ue266 {virtual_mem_free}"
-      label_alt: "\ue266 {virtual_mem_percent}%"
+      label: "\ue266 {virtual_mem_percent}% In use"
+      label_alt: "\ue266 {virtual_mem_free} Free"
       update_interval: 5000
       callbacks:
         on_right: "exec cmd /c Taskmgr"
@@ -414,8 +414,8 @@ widgets:
   komorebi_workspaces:
     type: "komorebi.workspaces.WorkspaceWidget"
     options:
-      label_offline: "komorebi instance not detected"
-      label_workspace_btn: "{index}"
+      label_offline: " WM Disabled "
+      label_workspace_btn: "{name}"
       label_default_name: "{index}"
       label_zero_index: false
       hide_empty_workspaces: false
@@ -426,16 +426,16 @@ widgets:
       hide_if_offline: false
       label: "{icon}"
       layout_icons:
-        bsp: "[ \udb82\ude07 BINARY SPACE PARTITIONING ]"
-        columns: "[ \udb82\ude07 COLUMNS ]"
-        rows: "[ \udb82\ude07 ROWS ]"
-        vertical_stack: "[ \udb82\ude07 MASTER-STACK ]"
-        horizontal_stack: "[ \udb82\ude07 HORIZONTAL-STACK ]"
-        ultrawide_vertical_stack: "[ \udb82\ude07 ULTRA-WIDE VERTICAL STACK ]"
+        bsp: " Tiled "
+        columns: " Tiled, Columns "
+        rows: " Tiled, Rows "
+        vertical_stack: " Tiled, Master/Stack "
+        horizontal_stack: " Tiled, Horizontal Stack "
+        ultrawide_vertical_stack: " Tiled, Ultrawide "
         monocle: " Monocle "
         maximised: " Maximised "
-        floating: "[FL]"
-        paused: "[DISPLAY ERROR! RESTART yasb & komorebi]"
+        floating: " Floating "
+        paused: " Disabled "
       callbacks:
         on_left: "next_layout"
         on_middle: "toggle_monocle"
@@ -457,13 +457,22 @@ widgets:
         on_middle: "do_nothing"
         on_right: "exec cmd.exe /c start ms-settings:network"
 
+  # traffic:
+  # type: "yasb.traffic.TrafficWidget"
+  # options:
+  #     label: "\ueb01 \ueab4 {download_speed} | \ueab7 {upload_speed}"
+  #     label_alt: "\ueb01 \ueab4 {upload_speed} | \ueab7 {download_speed}"
+  #     update_interval: 1000 # Update interval should be a multiple of 1000
+  #     callbacks:
+  #       on_right: "exec cmd /c Taskmgr"
+
   # Some custom widgets
 
   explorer_button:
     type: "yasb.custom.CustomWidget"
     options:
-      label: "\ue73c \ue216 \ue7a8 \ueb10"
-      label_alt: "\ue73c \ue216 Hello! \ue216 \ue7a8 \ueb10"
+      label: "\ue606 \ueb10"
+      label_alt: "\ue606 \ue216 Hello! \ueb10"
       class_name: "explorer-widget"
       exec_options:
         run_once: true

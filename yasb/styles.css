@@ -10,7 +10,7 @@
   background: #2E3440;
   border: 0px solid #A9B1D6;
   border-radius: 0px;
-  margin: 0 0 4 0px;
+  margin: 0 0 0 0px;
   padding: 0px;
 }
 
@@ -33,7 +33,7 @@
 .komorebi-workspaces {
 margin: 0 0 0 0px;
 background: #2E3440;
-border-radius: 11px;
+border-radius:0px;
 border: 0px solid #3B4252;
 }
 
@@ -68,7 +68,7 @@ border: 0px solid #3B4252;
 
 
 .container-right .label {
-  margin: 3px 07px 2px 0px;
+  margin: 0px 07px 0px 0px;
   color: #BF616A;
   border-radius: 0px;
   background: rgba(0,0,0,0);
@@ -76,9 +76,6 @@ border: 0px solid #3B4252;
   padding: 0px;
 }
 
-.custom-widget .icon.icon-right {
-  margin-left: 5px;
-}
 /* .custom-widget.hostname-widget { */
 /*     background: #83a598; */
 /* } */
@@ -144,7 +141,7 @@ border: 0px solid #3B4252;
 .active-window-widget .label {
   color: #2E3440;
   padding: 0 5 0 5px;
-  margin: 3px 0px 3px 0px;
+  margin: 4px 0px 4px 0px;
   background: #81A1C1;
 }
 /* .active-window-widget .label {
@@ -165,6 +162,6 @@ color: #2E3440;
 border: 0px solid #ECEFF4;
 background: #EBCB8B;
 border-radius: 0px;
-margin: 3px 7px 3px 7px; 
+margin: 2px 7px 2px 7px; 
 padding: 0 0 0 0px
 }

@@ -29,16 +29,15 @@ border: 0px solid #3B4252;
   font-weight: bold;
 }
 .ws-btn.populated {
-  font-style:normal;
+  font-style: italic;
   color: #4f6fd8;
 }
 .ws-btn.active {
   background: rgba(251, 241, 199, 0);
+  border-bottom-width: 2px;
+  border-color: #f5c2e7;
   font-weight: bold;
-  /* border-bottom: 2px solid #81A1C1;
-  /* border-bottom-left-radius: 0px;
-  /* border-bottom-right-radius: 0px;
-  */color: #f5c2e7;
+  color: #f5c2e7;
 }
 .container-right .label {
   margin: 0px 07px 0px 0px;
@@ -99,7 +98,7 @@ border: 0px solid #3B4252;
   border-radius: 0px;
   margin: 2px 7px 2px 7px; 
   padding: 0 0 0 0px
-  }
+}
 
 /*.container-right .label {
 /*margin: 0 0 0 0px;

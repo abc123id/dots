@@ -1,7 +1,7 @@
 .shell powershell
 
 # lmao fuck nigga sxhkd suck me sxhkweewee fucking losers lmao bspwm suck my dick AJAJAJJAJAJA
-
+# okay so now i use bspwm on arch linux
 # Reload whkd configuration
 alt + o                 : taskkill /f /im whkd.exe && start /b whkd # if shell is cmd
 # alt + o                 : taskkill /f /im whkd.exe && Start-Process whkd -WindowStyle hidden # if shell is pwsh / powershell

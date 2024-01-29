@@ -48,7 +48,7 @@ Invoke-Expression "$(thefuck --alias)"
 
  ## Functions
 function profile {
-    vim C:\users\conno\.config\powershell\user_profile.ps1
+    nvim C:\users\conno\.config\powershell\user_profile.ps1
   }
 function binds {
     Get-Content ~\.config\whkdrc
@@ -60,3 +60,4 @@ function pipes {
     pipes-rs -r 0.95
 }
  ## End Of Configuration
+#+END_SRC

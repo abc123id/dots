@@ -106,6 +106,7 @@ module.exports = {
         // Cygwin
         // - Example: `C:\\cygwin64\\bin\\bash.exe`
         shell: 'C:\\Program Files\\PowerShell\\7\\pwsh.exe',
+        // NOTE: YOUR PWSH LOCATION MAY BE DIFFERENT!!
         // for setting shell arguments (i.e. for using interactive shellArgs: `['-i']`)
         // by default `['--login']` will be used
         shellArgs: [],
@@ -114,10 +115,10 @@ module.exports = {
         // Supported Options:
         //  1. 'SOUND' -> Enables the bell as a sound
         //  2. false: turns off the bell
-        bell: 'SOUND',
+        bell: 'false',
         // An absolute file path to a sound file on the machine.
         // bellSoundURL: '/path/to/sound/file',
-        bellSoundURL: 'C:\Users\conno\Sounds\Barcode scanner beep sound (sound effect).mp3',
+        bellSoundURL: '',
         // if `true` (without backticks and without quotes), selected text will automatically be copied to the clipboard
         copyOnSelect: false,
         // if `true` (without backticks and without quotes), hyper will be set as the default protocol client for SSH

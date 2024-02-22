@@ -24,6 +24,7 @@ local config = {
 	--    top = 8,
 	--    bottom = 8,
 	--},
+	-- this shit is STILL BROKEN pLEAse stop giving me syntax errors i dont KNOW WHAT TO DO
 	default_prog = zsh,
 	font = wezterm.font("JetBrainsMono Nerd Font"),
 	font_size = 11.0,

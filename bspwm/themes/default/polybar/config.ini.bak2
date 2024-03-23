@@ -1,0 +1,86 @@
+## Copyright (C) 2020-2024 Aditya Shakya <adi1090x@gmail.com>
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+;; Global WM Settings
+
+[global/wm]
+margin-bottom = 0
+margin-top = 0
+
+include-file = ./system.ini
+include-file = ./colors.ini
+include-file = ./modules.ini
+
+[bar/main]
+monitor = ${env:MONITOR:}
+monitor-strict = false
+override-redirect = false
+
+bottom = true
+fixed-center = true
+
+width = 98%
+height = 36
+offset-x = 1%
+offset-y = 1%
+
+background = #00000000
+foreground = ${color.FOREGROUND}
+
+radius-top = 0.0
+radius-bottom = 0.0
+
+line-size = 3
+line-color = ${color.ACCENT}
+
+border-size = 0
+border-color = ${color.BACKGROUND}
+
+padding = 0
+module-margin-left = 0
+module-margin-right = 0
+
+font-0 = "JetBrains Mono:style=medium:size=10;3"
+font-1 = "Symbols Nerd Font:size=12;3"
+font-2 = "Symbols Nerd Font:size=15;4"
+font-3 = "Iosevka:style=bold:size=12;4"
+font-4 = "archcraft:size=14;4"
+
+modules-left = date battery sep mpd song sep backlight tray
+modules-center = bspwm
+modules-right = volume mod sep bluetooth sep network sep kernel
+
+separator =
+spacing = 0
+
+dim-value = 1.0
+
+wm-name = bspwm
+locale = 
+
+wm-restack = bspwm
+
+enable-ipc = true
+
+[settings]
+throttle-output = 5
+throttle-output-for = 10
+throttle-input-for = 30
+
+screenchange-reload = false
+
+compositing-background = source
+compositing-foreground = over
+compositing-overline = over
+compositing-underline = over
+compositing-border = over
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+;;	    __________  ______
+;;	   / ____/ __ \/ ____/
+;;	  / __/ / / / / /_    
+;;	 / /___/ /_/ / __/    
+;;	/_____/\____/_/       
+;;
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_

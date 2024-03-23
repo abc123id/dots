@@ -1,3 +1,4 @@
+
 #!/usr/bin/env bash
 
 ## Copyright (C) 2020-2024 Aditya Shakya <adi1090x@gmail.com>

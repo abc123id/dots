@@ -1,4 +1,3 @@
-
 #!/usr/bin/env bash
 
 ## Copyright (C) 2020-2024 Aditya Shakya <adi1090x@gmail.com>
@@ -225,7 +224,8 @@ apply_compositor() {
 		-e "s/shadow-offset-x = .*/shadow-offset-x = $picom_shadow_x;/g" \
 		-e "s/shadow-offset-y = .*/shadow-offset-y = $picom_shadow_y;/g" \
 		-e "s/method = .*/method = \"$picom_blur_method\";/g" \
-		-e "s/strength = .*/strength = $picom_blur_strength;/g"
+		-e "s/strength = .*/strength = $picom_blur_strength;/g" \
+		-e "s/openclose = .*/openclose = $picom_fade_openclose;/g"
 }
 
 # BSPWM -------------------------------------

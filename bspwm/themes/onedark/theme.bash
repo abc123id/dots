@@ -5,26 +5,26 @@
 # ------------------------------------------------------------------------------
 
 # Colors
-background='#282a36'
-foreground='#f8f8f2'
-color0='#44475a'
-color1='#ff5555'
-color2='#50fa7b'
-color3='#f1fa8c'
-color4='#bd93f9'
-color5='#ff79c6'
-color6='#8be9fd'
-color7='#bbbbbb'
-color8='#44475a'
-color9='#ff5555'
-color10='#50fa7b'
-color11='#f1fa8c'
-color12='#bd93f9'
-color13='#ff79c6'
-color14='#8be9fd'
-color15='#555555'
+background='#1d1f21'
+foreground='#c4c8c5'
+color0='#000000'
+color1='#cc6666'
+color2='#b5bd68'
+color3='#f0c574'
+color4='#80a1bd'
+color5='#b294ba'
+color6='#8abdb6'
+color7='#fffefe'
+color8='#000000'
+color9='#cc6666'
+color10='#b5bd68'
+color11='#f0c574'
+color12='#80a1bd'
+color13='#b294ba'
+color14='#8abdb6'
+color15='#fffefe'
 
-accent='#bd93f9'
+accent='#80a1bd'
 light_value='0.05'
 dark_value='0.30'
 
@@ -49,8 +49,8 @@ geany_font='JetBrains Mono 10'
 
 # Appearance
 gtk_font='JetBrains Mono 9'
-gtk_theme='Dracula'
-icon_theme='Dracula'
+gtk_theme='Everforest-Dark-B'
+icon_theme='Archcraft-Dark'
 cursor_theme='Qogirr'
 
 # Dunst
@@ -64,13 +64,14 @@ dunst_separator='2'
 
 # Picom
 picom_backend='glx'
-picom_corner='18'
+picom_corner='0'
 picom_shadow_r='14'
-picom_shadow_o='0.9'
-picom_shadow_x='-12'
-picom_shadow_y='-12'
+picom_shadow_o='1'
+picom_shadow_x='-14'
+picom_shadow_y='-14'
 picom_blur_method='dual_kawase'
 picom_blur_strength='10'
+picom_fade_openclose='false'
 
 # Bspwm
 bspwm_fbc="$accent"

@@ -4,7 +4,14 @@
 
 /*****----- Configuration -----*****/
 configuration {
-    show-icons:                 false;
+	modi:                       "drun,run,filebrowser,window";
+    show-icons:                 true;
+    display-drun:               " プログラム";
+    display-run:                " 指示する";
+    display-filebrowser:        " ファイル";
+    display-window:             " 窓 ";
+	drun-display-format:        "{name}";
+	window-format:              "{c} · {t}";
 }
 
 /*****----- Global Properties -----*****/
@@ -41,10 +48,10 @@ configuration {
 window {
     /* properties for window widget */
     transparency:                "real";
-    location:                    east;
-    anchor:                      east;
+    location:                    center;
+    anchor:                      center;
     fullscreen:                  false;
-    width:                       500px;
+    width:                       600px;
     x-offset:                    0px;
     y-offset:                    0px;
 
@@ -52,7 +59,7 @@ window {
     enabled:                     true;
     margin:                      0px;
     padding:                     0px;
-    border:                      2px solid;
+    border:                      1px solid;
     border-radius:               0px;
     border-color:                @border-colour;
     cursor:                      "default";
@@ -78,7 +85,7 @@ mainbox {
     border-radius:               0px 0px 0px 0px;
     border-color:                @border-colour;
     background-color:            transparent;
-    children:                    [ "inputbar", "message", "listview" ];
+    children:                    [ "inputbar", "message", "listview", "mode-switcher" ];
 }
 
 /*****----- Inputbar -----*****/
@@ -86,41 +93,35 @@ inputbar {
     enabled:                     true;
     spacing:                     10px;
     margin:                      0px;
-    padding:                     0px;
-    border:                      0px solid;
+    padding:                     0px 0px 8px 0px;
+    border:                      0px 0px 1px 0px;
     border-radius:               0px;
     border-color:                @border-colour;
     background-color:            transparent;
     text-color:                  @foreground-colour;
-    children:                    [ "textbox-prompt-colon", "prompt" ];
+    children:                    [ "textbox-prompt-colon", "entry" ];
 }
 
 prompt {
     enabled:                     true;
-    padding:                     8px 12px;
-    border-radius:               0px;
-    background-color:            @selected;
-    text-color:                  @background;
+    background-color:            inherit;
+    text-color:                  inherit;
 }
 textbox-prompt-colon {
     enabled:                     true;
-    padding:                     8px 11.5px;
-    border-radius:               0px;
+    padding:                     0px;
     expand:                      false;
-    str:                         "";
-    background-color:            @active;
-    text-color:                  @background;
+    str:                         "";
+    background-color:            inherit;
+    text-color:                  inherit;
 }
 entry {
     enabled:                     true;
-    padding:                     8px 12px;
-    border:                      0px 0px 1px 0px;
-    border-radius:               0px;
-    border-color:                @selected;
-    background-color:            @background-alt;
+    padding:                     0px;
+    background-color:            inherit;
     text-color:                  inherit;
     cursor:                      text;
-    placeholder:                 "";
+    placeholder:                 "検索...";
     placeholder-color:           inherit;
 }
 num-filtered-rows {
@@ -151,8 +152,8 @@ case-indicator {
 /*****----- Listview -----*****/
 listview {
     enabled:                     true;
-    columns:                     1;
-    lines:                       7;
+    columns:                     2;
+    lines:                       8;
     cycle:                       true;
     dynamic:                     true;
     scrollbar:                   true;
@@ -181,9 +182,9 @@ scrollbar {
 /*****----- Elements -----*****/
 element {
     enabled:                     true;
-    spacing:                     0px;
+    spacing:                     10px;
     margin:                      0px;
-    padding:                     8px;
+    padding:                     6px;
     border:                      0px solid;
     border-radius:               0px;
     border-color:                @border-colour;
@@ -192,7 +193,8 @@ element {
     cursor:                      pointer;
 }
 element normal.normal {
-    background-color:            var(normal-background);
+    
+    background-color:            transparent;
     text-color:                  var(normal-foreground);
 }
 element normal.urgent {
@@ -216,7 +218,7 @@ element selected.active {
     text-color:                  var(selected-active-foreground);
 }
 element alternate.normal {
-    background-color:            var(alternate-normal-background);
+    background-color:            transparent;
     text-color:                  var(alternate-normal-foreground);
 }
 element alternate.urgent {
@@ -255,9 +257,9 @@ mode-switcher{
     text-color:                  @foreground-colour;
 }
 button {
-    padding:                     5px 10px;
+    padding:                     8px 12px;
     border:                      0px solid;
-    border-radius:               8px;
+    border-radius:               0px;
     border-color:                @border-colour;
     background-color:            @alternate-background;
     text-color:                  inherit;
@@ -272,9 +274,9 @@ button selected {
 message {
     enabled:                     true;
     margin:                      0px;
-    padding:                     8px 10px;
+    padding:                     8px 12px;
     border:                      0px solid;
-    border-radius:               8px;
+    border-radius:               0px;
     border-color:                @border-colour;
     background-color:            @alternate-background;
     text-color:                  @foreground-colour;
@@ -292,9 +294,9 @@ textbox {
     markup:                      true;
 }
 error-message {
-    padding:                     15px;
+    padding:                     20px;
     border:                      0px solid;
-    border-radius:               10px;
+    border-radius:               0px;
     border-color:                @border-colour;
     background-color:            @background-colour;
     text-color:                  @foreground-colour;

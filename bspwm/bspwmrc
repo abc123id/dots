@@ -1,6 +1,3 @@
-
-
-
 #!/usr/bin/env bash
 
 #        _          _ ____  _____ _     _
@@ -26,10 +23,10 @@ export _JAVA_AWT_WM_NONREPARENTING=1
 ## Current theme ---------------------------------------------#
 
 ## Border colors
-BSPWM_FBC='#bd93f9'
-BSPWM_NBC='#282a36'
-BSPWM_ABC='#f1fa8c'
-BSPWM_PFC='#50fa7b'
+BSPWM_FBC='#7E9CD8'
+BSPWM_NBC='#1F1F28'
+BSPWM_ABC='#C0A36E'
+BSPWM_PFC='#76946A'
 
 ## BSPWM visual functions
 BSPWM_BORDER='2'
@@ -85,7 +82,7 @@ bspc wm --adopt-orphans
 ## Window rules ----------------------------------------------#
 
 ## Always Floating Apps
-declare -a floating=(Galculator kitty-float zenity minecraft-launcher Pcmanfm Thunar steam Nitrogen Music Pavucontrol kweather Onboard Yad 'Firefox:Places'
+declare -a floating=(Galculator kitty-float plattenalbum zenity minecraft-launcher Pcmanfm Thunar steam Nitrogen Music Pavucontrol kweather Onboard Yad 'Firefox:Places'
 	Viewnior feh Nm-connection-editor calamares Calamares)
 for i in ${floating[@]}; do
 	bspc rule -a $i state=floating follow=on focus=on

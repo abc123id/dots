@@ -59,8 +59,8 @@ cursor_theme='Qogirr'
 # Dunst
 dunst_width='300'
 dunst_height='80'
-dunst_offset='30x30'
-dunst_origin='top-right'
+dunst_offset='0x30'
+dunst_origin='bottom-center'
 dunst_font='Iosevka Custom 9'
 dunst_border='0'
 dunst_separator='2'
@@ -78,7 +78,7 @@ picom_fade_openclose='true'
 
 # Bspwm
 bspwm_fbc="$accent"
-bspwm_nbc="$background"
+bspwm_nbc="#282a2e"
 bspwm_abc="$color3"
 bspwm_pfc="$color2"
 bspwm_border='1'

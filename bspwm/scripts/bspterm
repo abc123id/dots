@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+## Copyright (C) 2020-2024 Aditya Shakya <adi1090x@gmail.com>
+##
+## launch alacritty with bspwm config
+
+# bspwm directory
+DIR="$HOME/.config/bspwm"
+CONFIG="$DIR/kitty/kitty.conf"
+
+if [ "$1" == "--float" ]; then
+	kitty --class kitty-float --config "$CONFIG"
+elif [ "$1" == "--alt" ]; then
+	alacritty --class 'alacritty,alacritty' --config-file ~/.config/bspwm/alacritty/alacritty.toml
+else
+	kitty --config "$CONFIG"
+fi

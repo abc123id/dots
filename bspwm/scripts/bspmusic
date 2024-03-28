@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+## Copyright (C) 2020-2024 Aditya Shakya <adi1090x@gmail.com>
+##
+## Run ncmpcpp with alternate config
+
+# bspwm directory
+DIR="$HOME/.config/bspwm"
+
+CONFIG="$DIR/kitty/kitty.conf"
+
+kitty --class 'Music' --config "$CONFIG" \
+	-o initial_window_width=105c \
+	-o initial_window_height=22c \
+	-e ~/.ncmpcpp/scripts/ncmpcpp-art

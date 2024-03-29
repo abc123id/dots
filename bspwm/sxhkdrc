@@ -34,7 +34,7 @@ super + {t,b,m,n,r,s,w,x}
 
 # Launch Apps
 super + shift + {f,w,e}
-	{thunar,firefox,neovide}
+	{pcmanfm,firefox,neovide}
 
 # Terminal Apps
 ctrl + alt + {v,r,h}

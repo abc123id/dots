@@ -131,7 +131,7 @@ exec mpd &
 openrgb --startminimized
 
 # Start libinput-gestures for trackpad gestures
-libinput-gestures &
+# libinput-gestures &
 
 # Start bspwm scripts
 bspbar

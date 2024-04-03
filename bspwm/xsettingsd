@@ -1,7 +1,7 @@
 ## Copyright (C) 2020-2024 Aditya Shakya <adi1090x@gmail.com>
 
-Net/ThemeName "Nordic-bluish-accent-standard-buttons"
-Net/IconThemeName "Sardi-Flat-Arc"
+Net/ThemeName "Nordic"
+Net/IconThemeName "Arc-Circle"
 Gtk/CursorThemeName "Qogirr"
 Net/SoundThemeName "freedesktop"
 Net/EnableEventSounds "1"

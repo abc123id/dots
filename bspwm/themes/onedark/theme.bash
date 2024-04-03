@@ -49,8 +49,8 @@ geany_font='JetBrains Mono 10'
 
 # Appearance
 gtk_font='JetBrains Mono 9'
-gtk_theme='Nordic-bluish-accent-standard-buttons'
-icon_theme='Sardi-Flat-Arc'
+gtk_theme='Nordic'
+icon_theme='Arc-Circle'
 cursor_theme='Qogirr'
 
 # Dunst

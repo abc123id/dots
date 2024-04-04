@@ -1,5 +1,5 @@
 /**
- * Copyright (C) 2020-2023 Aditya Shakya <adi1090x@gmail.com>
+ * Copyright (C) 2020-2024 Aditya Shakya <adi1090x@gmail.com>
  **/
 
 /*****----- Configuration -----*****/
@@ -12,21 +12,21 @@ configuration {
 @import                          "shared/fonts.rasi"
 
 /*
-USE_ICON=YES
+USE_ICON=NO
 */
 
 /*****----- Main Window -----*****/
 window {
     transparency:                "real";
-    location:                    center;
-    anchor:                      center;
+    location:                    southeast;
+    anchor:                      southeast;
     fullscreen:                  false;
-    width:                       500px;
-    x-offset:                    0px;
-    y-offset:                    0px;
+    width:                       400px;
+    x-offset:                    -10px;
+    y-offset:                    -10px;
     margin:                      0px;
     padding:                     0px;
-    border:                      2px solid;
+    border:                      0px solid;
     border-radius:               0px;
     border-color:                @selected;
     cursor:                      "default";
@@ -60,17 +60,15 @@ textbox-prompt-colon {
     enabled:                     true;
     expand:                      false;
     str:                         "";
-    padding:                     10px 12px;
     border-radius:               0px;
-    background-color:            @active;
-    text-color:                  @background;
+    background-color:            inherit;
+    text-color:                  inherit;
 }
 prompt {
     enabled:                     true;
-    padding:                     10px;
     border-radius:               0px;
-    background-color:            @selected;
-    text-color:                  @background;
+    background-color:            inherit;
+    text-color:                  inherit;
 }
 
 /*****----- Message -----*****/
@@ -94,8 +92,8 @@ textbox {
 /*****----- Listview -----*****/
 listview {
     enabled:                     true;
-    columns:                     5;
-    lines:                       1;
+    columns:                     2;
+    lines:                       3;
     cycle:                       true;
     scrollbar:                   false;
     layout:                      vertical;
@@ -108,7 +106,7 @@ listview {
 /*****----- Elements -----*****/
 element {
     enabled:                     true;
-    padding:                     22px 10px;
+    padding:                     10px;
     border:                      0px solid;
     border-radius:               0px;
     border-color:                @selected;
@@ -117,7 +115,6 @@ element {
     cursor:                      pointer;
 }
 element-text {
-    font:                        "feather 20";
     background-color:            transparent;
     text-color:                  inherit;
     cursor:                      inherit;
@@ -127,10 +124,7 @@ element-text {
 
 element normal.normal,
 element alternate.normal {
-    border:                      1px solid;
-    border-radius:               0px;
-    border-color:                @selected;
-    background-color:            var(background);
+    background-color:            var(background-alt);
     text-color:                  var(foreground);
 }
 element normal.urgent,

@@ -1,5 +1,5 @@
 /**
- * Copyright (C) 2020-2023 Aditya Shakya <adi1090x@gmail.com>
+ * Copyright (C) 2020-2024 Aditya Shakya <adi1090x@gmail.com>
  **/
 
 /*****----- Global Properties -----*****/
@@ -14,11 +14,11 @@ window {
     width:                       350px;
     x-offset:                    0px;
     y-offset:                    0px;
-    padding:                     20px;
-    border:                      2px solid;
+    padding:                     15px;
+    border:                      0px solid;
     border-radius:               0px;
+    border-color:                @selected;
     background-color:            @background;
-    border-color:                #c34043;
     cursor:                      "default";
     children:                    [ "inputbar", "listview" ];
 }
@@ -48,7 +48,7 @@ textbox-prompt-colon {
     str:                         "";
     padding:                     10px 13px;
     border-radius:               0px;
-    background-color:            @active;
+    background-color:            @urgent;
     text-color:                  @background;
 }
 prompt {
@@ -60,10 +60,8 @@ prompt {
 }
 entry {
     enabled:                     true;
-    padding:                     10px;
-    border:                      0px 0px 1px 0px;
+    padding:                     10px 15px;
     border-radius:               0px;
-    border-color:                @selected;
     background-color:            @background-alt;
     text-color:                  inherit;
     cursor:                      text;

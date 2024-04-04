@@ -140,6 +140,6 @@ element selected.urgent {
     text-color:                  var(background);
 }
 element selected.normal {
-    background-color:            var(urgent);
+    background-color:            var(selected);
     text-color:                  var(background);
 }

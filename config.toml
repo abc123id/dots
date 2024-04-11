@@ -1,0 +1,19 @@
+# See how to configure Vinegar on the documentation website:
+# https://vinegarhq.org/Configuration
+[player]
+# wineroot = "/home/abc123id/.local/share/games/lutris-GE-Proton8-26-x86_64"
+gpu = "prime-discrete"
+# renderer = "Vulkan"
+# dxvk = false
+forced_version = "version-70a2467227df4077"
+
+[splash]
+enabled = true
+
+[studio]
+# wineroot = "/home/abc123id/.local/share/games/wine-vinegarhq-build-9.2/"
+renderer = "D3D11"
+gpu = "prime-discrete"
+
+[player.fflags]
+DFIntTaskSchedulerTargetFps = 60

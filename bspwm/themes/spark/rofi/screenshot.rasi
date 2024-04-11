@@ -23,7 +23,7 @@ window {
     fullscreen:                  false;
     width:                       400px;
     x-offset:                    -10px;
-    y-offset:                    -48px;
+    y-offset:                    -10px;
     margin:                      0px;
     padding:                     0px;
     border:                      0px solid;

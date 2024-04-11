@@ -1,11 +1,11 @@
 /**
- * Copyright (C) 2020-2024 Aditya Shakya <adi1090x@gmail.com>
+ * Copyright (C) 2020-2023 Aditya Shakya <adi1090x@gmail.com>
  **/
 
 /*****----- Configuration -----*****/
 configuration {
 	modi:                       "run";
-    show-icons:                 false;
+    show-icons:                 true;
     display-drun:               " Apps";
     display-run:                " Run";
     display-filebrowser:        " Files";
@@ -48,19 +48,18 @@ configuration {
 window {
     /* properties for window widget */
     transparency:                "real";
-    location:                    southeast;
-    anchor:                      southeast;
+    location:                    center;
+    anchor:                      center;
     fullscreen:                  false;
-    width:                       450px;
-    height:                      420px;
-    x-offset:                    -10px;
-    y-offset:                    -10px;
+    width:                       500px;
+    x-offset:                    0px;
+    y-offset:                    0px;
 
     /* properties for all widgets */
     enabled:                     true;
     margin:                      0px;
     padding:                     0px;
-    border:                      0px solid;
+    border:                      2px solid;
     border-radius:               0px;
     border-color:                @border-colour;
     cursor:                      "default";
@@ -86,7 +85,7 @@ mainbox {
     border-radius:               0px 0px 0px 0px;
     border-color:                @border-colour;
     background-color:            transparent;
-    children:                    [ "inputbar", "listview" ];
+    children:                    [ "inputbar", "message", "listview" ];
 }
 
 /*****----- Inputbar -----*****/
@@ -94,36 +93,35 @@ inputbar {
     enabled:                     true;
     spacing:                     10px;
     margin:                      0px;
-    padding:                     0px;
-    border:                      0px solid;
+    padding:                     0px 0px 8px 0px;
+    border:                      0px 0px 1px 0px;
     border-radius:               0px;
     border-color:                @border-colour;
     background-color:            transparent;
     text-color:                  @foreground-colour;
-    children:                    [ "textbox-prompt-colon", "prompt", "entry" ];
+    children:                    [ "textbox-prompt-colon", "entry" ];
 }
 
 prompt {
     enabled:                     true;
-    padding:                     5px 0px;
     background-color:            inherit;
     text-color:                  inherit;
 }
 textbox-prompt-colon {
     enabled:                     true;
-    padding:                     5px 0px;
+    padding:                     0px;
     expand:                      false;
-    str:                         "直";
+    str:                         "";
     background-color:            inherit;
     text-color:                  inherit;
 }
 entry {
     enabled:                     true;
-    padding:                     5px 0px;
+    padding:                     0px;
     background-color:            inherit;
     text-color:                  inherit;
     cursor:                      text;
-    placeholder:                 "";
+    placeholder:                 "Run...";
     placeholder-color:           inherit;
 }
 num-filtered-rows {
@@ -155,7 +153,7 @@ case-indicator {
 listview {
     enabled:                     true;
     columns:                     1;
-    lines:                       8;
+    lines:                       6;
     cycle:                       true;
     dynamic:                     true;
     scrollbar:                   false;
@@ -177,7 +175,7 @@ listview {
 scrollbar {
     handle-width:                5px ;
     handle-color:                @handle-colour;
-    border-radius:               10px;
+    border-radius:               0px;
     background-color:            @alternate-background;
 }
 
@@ -186,7 +184,7 @@ element {
     enabled:                     true;
     spacing:                     10px;
     margin:                      0px;
-    padding:                     10px;
+    padding:                     6px;
     border:                      0px solid;
     border-radius:               0px;
     border-color:                @border-colour;
@@ -248,7 +246,6 @@ element-text {
 /*****----- Mode Switcher -----*****/
 mode-switcher{
     enabled:                     true;
-    expand:                      false;
     spacing:                     10px;
     margin:                      0px;
     padding:                     0px;
@@ -259,7 +256,7 @@ mode-switcher{
     text-color:                  @foreground-colour;
 }
 button {
-    padding:                     10px;
+    padding:                     8px 12px;
     border:                      0px solid;
     border-radius:               0px;
     border-color:                @border-colour;
@@ -276,7 +273,7 @@ button selected {
 message {
     enabled:                     true;
     margin:                      0px;
-    padding:                     10px;
+    padding:                     8px 12px;
     border:                      0px solid;
     border-radius:               0px;
     border-color:                @border-colour;
@@ -296,9 +293,9 @@ textbox {
     markup:                      true;
 }
 error-message {
-    padding:                     15px;
+    padding:                     20px;
     border:                      0px solid;
-    border-radius:               10px;
+    border-radius:               0px;
     border-color:                @border-colour;
     background-color:            @background-colour;
     text-color:                  @foreground-colour;

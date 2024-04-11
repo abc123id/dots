@@ -72,7 +72,7 @@ bspc config normal_border_color "$BSPWM_NBC"
 bspc config active_border_color "$BSPWM_ABC"
 bspc config presel_feedback_color "$BSPWM_PFC"
 bspc config borderless_monocle false
-bspc config gapless_monocle false
+bspc config gapless_monocle true
 bspc config paddingless_monocle false
 bspc config single_monocle false
 bspc config focus_follows_pointer true

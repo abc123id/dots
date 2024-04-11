@@ -4,56 +4,53 @@
 # Spark Theme
 # ------------------------------------------------------------------------------
 
-background='#1d1f21'
-foreground='#c4c8c5'
-color0='#000000'
-color1='#cc6666'
-color2='#b5bd68'
-color3='#f0c574'
-color4='#80a1bd'
-color5='#b294ba'
-color6='#8abdb6'
-color7='#fffefe'
-color8='#000000'
-color9='#cc6666'
-color10='#b5bd68'
-color11='#f0c574'
-color12='#80a1bd'
-color13='#b294ba'
-color14='#8abdb6'
-color15='#fffefe'
+background='#2E3440'
+foreground='#D8DEE9'
+color0='#3B4252'
+color1='#BF616A'
+color2='#A3BE8C'
+color3='#EBCB8B'
+color4='#81A1C1'
+color5='#B48EAD'
+color6='#88C0D0'
+color7='#E5E9F0'
+color8='#4C566A'
+color9='#BF616A'
+color10='#A3BE8C'
+color11='#EBCB8B'
+color12='#81A1C1'
+color13='#B48EAD'
+color14='#8FBCBB'
+color15='#ECEFF4'
 
-accent='#80a1bd'
-
-element_bg="$background"
-element_fg="$foreground"
-
+accent='#81A1C1'
 light_value='0.05'
 dark_value='0.30'
-
+element_bg="$background"
+element_fg="$foreground"
 # Wallpaper
 wdir="$(cd "$(dirname "${BASH_SOURCE[0]}")" &>/dev/null && pwd)"
 wallpaper="$wdir/wallpaper"
 
 # Polybar
-polybar_font='Iosevka Nerd Font:size=10;3'
+polybar_font='JetBrains Mono:size=10;3'
 
 # Rofi
 rofi_font='Iosevka 10'
-rofi_icon='Papirus-Apps'
+rofi_icon='Papirus'
 
 # Terminal
-terminal_font_name='Iosevka Nerd Font'
+terminal_font_name='JetBrainsMono Nerd Font'
 terminal_font_size='10'
 
 # Geany
-geany_colors='spark.conf'
+geany_colors='arc.conf'
 geany_font='JetBrains Mono 10'
 
 # Appearance
-gtk_font='Noto Sans 9'
-gtk_theme='Everforest-Dark-B'
-icon_theme='Archcraft-Dark'
+gtk_font='JetBrains Mono 9'
+gtk_theme='Nordic'
+icon_theme='Arc-Circle'
 cursor_theme='Qogirr'
 
 # Dunst

@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+## Copyright (C) 2020-2024 Aditya Shakya <adi1090x@gmail.com>
+##
+## launch alacritty with qtile config
+
+# qtile directory
+DIR="$HOME/.config/qtile"
+CONFIG="$DIR/kitty/kitty.conf"
+
+if [ "$1" == "--float" ]; then
+	kitty --class 'alacritty-float' --config "$CONFIG"
+elif [ "$1" == "--full" ]; then
+	kitty --class 'alacritty-fullscreen' --config "$CONFIG" \
+		-o window.startup_mode="'Fullscreen'" \
+		window.padding.x=30 window.padding.y=30 \
+		window.opacity=0.95 font.size=14
+else
+	kitty --config "$CONFIG"
+fi

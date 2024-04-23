@@ -1,0 +1,13 @@
+## Copyright (C) 2020-2024 Aditya Shakya <adi1090x@gmail.com>
+
+Net/ThemeName "Arc-Dark"
+Net/IconThemeName "Arc-Circle"
+Gtk/CursorThemeName "Qogirr"
+Net/SoundThemeName "freedesktop"
+Net/EnableEventSounds "1"
+Net/EnableInputFeedbackSounds "1"
+Xft/DPI "-1"
+Xft/Hinting 1
+Xft/HintStyle "hintslight"
+Xft/Antialias 1
+Xft/RGBA "none"

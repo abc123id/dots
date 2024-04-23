@@ -52,11 +52,11 @@ USE_ICON=NO
 window {
     /* properties for window widget */
     transparency:                "real";
-    location:                    south;
-    anchor:                      south;
+    location:                    southeast;
+    anchor:                      southeast;
     fullscreen:                  false;
     width:                       350px;
-    x-offset:                    0px;
+    x-offset:                    -20px;
     y-offset:                    -58px;
 
     /* properties for all widgets */
@@ -154,8 +154,8 @@ case-indicator {
 /*****----- Listview -----*****/
 listview {
     enabled:                     true;
-    columns:                     2;
-    lines:                       3;
+    columns:                     1;
+    lines:                       6;
     cycle:                       true;
     dynamic:                     true;
     scrollbar:                   false;

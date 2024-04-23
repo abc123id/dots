@@ -48,8 +48,8 @@ geany_colors='arc.conf'
 geany_font='JetBrains Mono 10'
 
 # Appearance
-gtk_font='JetBrains Mono 9'
-gtk_theme='Arc-Dark'
+gtk_font='JetBrains Mono'
+gtk_theme='Nordic-bluish-accent-standard-buttons'
 icon_theme='Arc-Circle'
 cursor_theme='Qogirr'
 
@@ -66,16 +66,16 @@ dunst_separator='1'
 picom_backend='glx'
 picom_corner='0'
 picom_shadow_r='14'
-picom_shadow_o='0.30'
+picom_shadow_o='0.60'
 picom_shadow_x='-12'
 picom_shadow_y='-12'
-picom_blur_method='none'
-picom_blur_strength='0'
+picom_blur_method='dual_kawase'
+picom_blur_strength='10'
 
 # Bspwm
 bspwm_fbc="$accent"
 bspwm_nbc="$background"
-bspwm_abc="$color5"
+bspwm_abc="$color3"
 bspwm_pfc="$color2"
 bspwm_border='1'
 bspwm_gap='10'

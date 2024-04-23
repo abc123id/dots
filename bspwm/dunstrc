@@ -4,14 +4,14 @@
 monitor = 0
 follow = mouse
 width = 300
-height = 120
+height = 80
 origin = top-right
 offset = 10x48
-corner_radius = 0
+corner_radius = 16
 scale = 0
 notification_limit = 0
 progress_bar = true
-progress_bar_height = 120
+progress_bar_height = 80
 progress_bar_frame_width = 2
 progress_bar_min_width = 300
 progress_bar_max_width = 300
@@ -55,18 +55,18 @@ class = Dunst
 
 [urgency_low]
 timeout = 2
-background = "#2E3440"
-foreground = "#D8DEE9"
-frame_color = "#39404f"
+background = "#181825"
+foreground = "#cdd6f4"
+frame_color = "#89B4FA"
 
 [urgency_normal]
 timeout = 5
-background = "#2E3440"
-foreground = "#D8DEE9"
-frame_color = "#39404f"
+background = "#181825"
+foreground = "#cdd6f4"
+frame_color = "#89B4FA"
 
 [urgency_critical]
 timeout = 0
-background = "#2E3440"
-foreground = "#BF616A"
-frame_color = "#BF616A"
+background = "#181825"
+foreground = "#F38BA8"
+frame_color = "#F38BA8"

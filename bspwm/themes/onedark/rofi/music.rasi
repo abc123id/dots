@@ -12,22 +12,22 @@ configuration {
 @import                          "shared/fonts.rasi"
 
 /*
-USE_ICON=NO
+USE_ICON=YES
 */
 
 /*****----- Main Window -----*****/
 window {
     transparency:                "real";
-    location:                    southwest;
-    anchor:                      southwest;
+    location:                    center;
+    anchor:                      center;
     fullscreen:                  false;
-    width:                       400px;
-    x-offset:                    10px;
-    y-offset:                    -10px;
+    width:                       600px;
+    x-offset:                    0px;
+    y-offset:                    0px;
     margin:                      0px;
     padding:                     0px;
     border:                      0px solid;
-    border-radius:               0px;
+    border-radius:               10px;
     border-color:                @selected;
     cursor:                      "default";
     background-color:            @background;
@@ -38,7 +38,7 @@ mainbox {
     enabled:                     true;
     spacing:                     10px;
     margin:                      0px;
-    padding:                     20px;
+    padding:                     30px;
     background-color:            transparent;
     children:                    [ "inputbar", "message", "listview" ];
 }
@@ -60,15 +60,17 @@ textbox-prompt-colon {
     enabled:                     true;
     expand:                      false;
     str:                         "";
-    border-radius:               0px;
-    background-color:            inherit;
-    text-color:                  inherit;
+    padding:                     10px 14px;
+    border-radius:               100%;
+    background-color:            @active;
+    text-color:                  @background;
 }
 prompt {
     enabled:                     true;
-    border-radius:               0px;
-    background-color:            inherit;
-    text-color:                  inherit;
+    padding:                     10px;
+    border-radius:               20px;
+    background-color:            @selected;
+    text-color:                  @background;
 }
 
 /*****----- Message -----*****/
@@ -77,7 +79,7 @@ message {
     margin:                      0px;
     padding:                     10px;
     border:                      0px solid;
-    border-radius:               0px;
+    border-radius:               12px;
     border-color:                @selected;
     background-color:            @background-alt;
     text-color:                  @foreground;
@@ -92,8 +94,8 @@ textbox {
 /*****----- Listview -----*****/
 listview {
     enabled:                     true;
-    columns:                     2;
-    lines:                       3;
+    columns:                     6;
+    lines:                       1;
     cycle:                       true;
     scrollbar:                   false;
     layout:                      vertical;
@@ -106,15 +108,16 @@ listview {
 /*****----- Elements -----*****/
 element {
     enabled:                     true;
-    padding:                     10px;
+    padding:                     22px 10px;
     border:                      0px solid;
-    border-radius:               0px;
+    border-radius:               12px;
     border-color:                @selected;
     background-color:            transparent;
     text-color:                  @foreground;
     cursor:                      pointer;
 }
 element-text {
+    font:                        "feather 20";
     background-color:            transparent;
     text-color:                  inherit;
     cursor:                      inherit;

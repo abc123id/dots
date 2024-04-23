@@ -1,5 +1,5 @@
 /**
- * Copyright (C) 2020-2023 Aditya Shakya <adi1090x@gmail.com>
+ * Copyright (C) 2020-2024 Aditya Shakya <adi1090x@gmail.com>
  **/
 
 /*****----- Global Properties -----*****/
@@ -15,10 +15,10 @@ window {
     x-offset:                    0px;
     y-offset:                    0px;
     padding:                     20px;
-    border:                      2px solid;
+    border:                      1px solid;
     border-radius:               0px;
+    border-color:                @selected;
     background-color:            @background;
-    border-color:                #c34043;
     cursor:                      "default";
     children:                    [ "inputbar", "listview" ];
 }

@@ -195,13 +195,13 @@ apply_dunst() {
 		timeout = 2
 		background = "${background}"
 		foreground = "${foreground}"
-		frame_color = "${altbackground}"
+		frame_color = "${accent}"
 
 		[urgency_normal]
 		timeout = 5
 		background = "${background}"
 		foreground = "${foreground}"
-		frame_color = "${altbackground}"
+		frame_color = "${accent}"
 
 		[urgency_critical]
 		timeout = 0
@@ -291,7 +291,6 @@ apply_alacritty() {
 		white   = "${color15}"
 	_EOF_
 }
-
 ## Execute Script ---------------------------
 notify_user
 create_file

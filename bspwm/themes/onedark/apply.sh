@@ -195,13 +195,13 @@ apply_dunst() {
 		timeout = 2
 		background = "${background}"
 		foreground = "${foreground}"
-		frame_color = "${altbackground}"
+		frame_color = "${accent}"
 
 		[urgency_normal]
 		timeout = 5
 		background = "${background}"
 		foreground = "${foreground}"
-		frame_color = "${altbackground}"
+		frame_color = "${accent}"
 
 		[urgency_critical]
 		timeout = 0
@@ -224,8 +224,7 @@ apply_compositor() {
 		-e "s/shadow-offset-x = .*/shadow-offset-x = $picom_shadow_x;/g" \
 		-e "s/shadow-offset-y = .*/shadow-offset-y = $picom_shadow_y;/g" \
 		-e "s/method = .*/method = \"$picom_blur_method\";/g" \
-		-e "s/strength = .*/strength = $picom_blur_strength;/g" \
-		-e "s/openclose = .*/openclose = $picom_fade_openclose;/g"
+		-e "s/strength = .*/strength = $picom_blur_strength;/g"
 }
 
 # BSPWM -------------------------------------
@@ -292,7 +291,6 @@ apply_alacritty() {
 		white   = "${color15}"
 	_EOF_
 }
-
 ## Execute Script ---------------------------
 notify_user
 create_file

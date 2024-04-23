@@ -10,8 +10,8 @@ TDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" &>/dev/null && pwd)"
 THEME="${TDIR##*/}"
 
 source "$BDIR"/themes/"$THEME"/theme.bash
-altbackground="$(pastel color $element_bg | pastel darken $dark_value | pastel format hex)"
-altforeground="$(pastel color $element_fg | pastel lighten $light_value | pastel format hex)"
+altbackground="$(pastel color $background | pastel lighten $light_value | pastel format hex)"
+altforeground="$(pastel color $foreground | pastel darken $dark_value | pastel format hex)"
 
 ## Directories ------------------------------
 PATH_CONF="$HOME/.config"
@@ -39,9 +39,9 @@ apply_polybar() {
 	cat >${PATH_PBAR}/colors.ini <<-EOF
 		[color]
 
-		BACKGROUND = ${element_bg}
-		FOREGROUND = ${element_fg}
-		ALTBACKGROUND = ${color15}
+		BACKGROUND = ${background}
+		FOREGROUND = ${foreground}
+		ALTBACKGROUND = ${altbackground}
 		ALTFOREGROUND = ${altforeground}
 		ACCENT = ${accent}
 
@@ -85,12 +85,12 @@ apply_rofi() {
 	# rewrite colors file
 	cat >${PATH_ROFI}/shared/colors.rasi <<-EOF
 		* {
-		    background:     ${element_bg};
-		    background-alt: ${color15};
-		    foreground:     ${element_fg};
+		    background:     ${background};
+		    background-alt: ${altbackground};
+		    foreground:     ${foreground};
 		    selected:       ${accent};
-		    active:         ${color10};
-		    urgent:         ${color9};
+		    active:         ${color2};
+		    urgent:         ${color1};
 		}
 	EOF
 
@@ -193,21 +193,21 @@ apply_dunst() {
 	cat >>${PATH_BSPWM}/dunstrc <<-_EOF_
 		[urgency_low]
 		timeout = 2
-		background = "${element_bg}"
-		foreground = "${element_fg}"
-		frame_color = "${color15}"
+		background = "${background}"
+		foreground = "${foreground}"
+		frame_color = "${accent}"
 
 		[urgency_normal]
 		timeout = 5
-		background = "${element_bg}"
-		foreground = "${element_fg}"
-		frame_color = "${color15}"
+		background = "${background}"
+		foreground = "${foreground}"
+		frame_color = "${accent}"
 
 		[urgency_critical]
 		timeout = 0
-		background = "${element_bg}"
-		foreground = "${color9}"
-		frame_color = "${color9}"
+		background = "${background}"
+		foreground = "${color1}"
+		frame_color = "${color1}"
 	_EOF_
 }
 
@@ -224,8 +224,7 @@ apply_compositor() {
 		-e "s/shadow-offset-x = .*/shadow-offset-x = $picom_shadow_x;/g" \
 		-e "s/shadow-offset-y = .*/shadow-offset-y = $picom_shadow_y;/g" \
 		-e "s/method = .*/method = \"$picom_blur_method\";/g" \
-		-e "s/strength = .*/strength = $picom_blur_strength;/g" \
-		-e "s/openclose = .*/openclose = $picom_fade_openclose;/g"
+		-e "s/strength = .*/strength = $picom_blur_strength;/g"
 }
 
 # BSPWM -------------------------------------
@@ -292,7 +291,6 @@ apply_alacritty() {
 		white   = "${color15}"
 	_EOF_
 }
-
 ## Execute Script ---------------------------
 notify_user
 create_file

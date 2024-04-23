@@ -32,7 +32,7 @@ light_value='0.12'
 dark_value='0.30'
 
 # Wallpaper
-wdir="$(cd "$(dirname "${BASH_SOURCE[0]}")" &>/dev/null && pwd)"
+wdir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 wallpaper="$wdir/wallpaper"
 
 # Polybar
@@ -54,7 +54,7 @@ geany_font='JetBrains Mono 10'
 gtk_font='Noto Sans 9'
 gtk_theme='Wave'
 icon_theme='Luv-Folders-Dark'
-cursor_theme='Qogirr'
+cursor_theme='Vimix'
 
 # Dunst
 dunst_width='300'
@@ -62,23 +62,23 @@ dunst_height='80'
 dunst_offset='20x58'
 dunst_origin='bottom-right'
 dunst_font='Iosevka Custom 9'
-dunst_border='2'
+dunst_border='0'
 dunst_separator='2'
 
 # Picom
 picom_backend='glx'
 picom_corner='0'
 picom_shadow_r='14'
-picom_shadow_o='0.70'
+picom_shadow_o='0.30'
 picom_shadow_x='-12'
 picom_shadow_y='-12'
-picom_blur_method='dual_kawase'
-picom_blur_strength='10'
+picom_blur_method='none'
+picom_blur_strength='0'
 
 # Bspwm
 bspwm_fbc="$accent"
 bspwm_nbc="$background"
-bspwm_abc="$color3"
+bspwm_abc="$color5"
 bspwm_pfc="$color2"
 bspwm_border='2'
 bspwm_gap='10'

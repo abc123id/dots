@@ -1,5 +1,5 @@
 /**
- * Copyright (C) 2020-2023 Aditya Shakya <adi1090x@gmail.com>
+ * Copyright (C) 2020-2024 Aditya Shakya <adi1090x@gmail.com>
  **/
 
 /*****----- Configuration -----*****/
@@ -26,9 +26,9 @@ window {
     y-offset:                    0px;
     margin:                      0px;
     padding:                     0px;
-    border:                      2px solid;
+    border:                      1px solid;
     border-radius:               0px;
-    border-color:                @urgent;
+    border-color:                @selected;
     cursor:                      "default";
     background-color:            @background;
 }
@@ -50,7 +50,7 @@ inputbar {
     padding:                     0px;
     border:                      0px;
     border-radius:               0px;
-    border-color:                @urgent;
+    border-color:                @selected;
     background-color:            transparent;
     text-color:                  @foreground;
     children:                    [ "textbox-prompt-colon", "prompt"];
@@ -62,14 +62,14 @@ textbox-prompt-colon {
     str:                         "";
     padding:                     10px 12px;
     border-radius:               0px;
-    background-color:            @urgent;
+    background-color:            @active;
     text-color:                  @background;
 }
 prompt {
     enabled:                     true;
     padding:                     10px;
     border-radius:               0px;
-    background-color:            @urgent;
+    background-color:            @selected;
     text-color:                  @background;
 }
 
@@ -80,7 +80,7 @@ message {
     padding:                     10px;
     border:                      0px solid;
     border-radius:               0px;
-    border-color:                @urgent;
+    border-color:                @selected;
     background-color:            @background-alt;
     text-color:                  @foreground;
 }
@@ -111,7 +111,7 @@ element {
     padding:                     22px 10px;
     border:                      0px solid;
     border-radius:               0px;
-    border-color:                @urgent;
+    border-color:                @selected;
     background-color:            transparent;
     text-color:                  @foreground;
     cursor:                      pointer;
@@ -129,7 +129,7 @@ element normal.normal,
 element alternate.normal {
     border:                      1px solid;
     border-radius:               0px;
-    border-color:                @urgent;
+    border-color:                @selected;
     background-color:            var(background);
     text-color:                  var(foreground);
 }
@@ -142,10 +142,10 @@ element selected.active {
 element normal.active,
 element alternate.active,
 element selected.urgent {
-    background-color:            var(urgent);
+    background-color:            var(active);
     text-color:                  var(background);
 }
 element selected.normal {
-    background-color:            var(urgent);
+    background-color:            var(selected);
     text-color:                  var(background);
 }

@@ -10,8 +10,8 @@ TDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" &>/dev/null && pwd)"
 THEME="${TDIR##*/}"
 
 source "$BDIR"/themes/"$THEME"/theme.bash
-altbackground="$(pastel color $element_bg | pastel lighten $light_value | pastel format hex)"
-altforeground="$(pastel color $element_fg | pastel darken $dark_value | pastel format hex)"
+altbackground="$(pastel color $background | pastel lighten $light_value | pastel format hex)"
+altforeground="$(pastel color $foreground | pastel darken $dark_value | pastel format hex)"
 
 ## Directories ------------------------------
 PATH_CONF="$HOME/.config"
@@ -39,11 +39,11 @@ apply_polybar() {
 	cat >${PATH_PBAR}/colors.ini <<-EOF
 		[color]
 
-		BACKGROUND = ${element_bg}
-		FOREGROUND = ${element_fg}
+		BACKGROUND = ${background}
+		FOREGROUND = ${foreground}
 		ALTBACKGROUND = ${altbackground}
 		ALTFOREGROUND = ${altforeground}
-		ACCENT = ${element_hl}
+		ACCENT = ${accent}
 
 		BLACK = ${color0}
 		RED = ${color1}
@@ -85,10 +85,10 @@ apply_rofi() {
 	# rewrite colors file
 	cat >${PATH_ROFI}/shared/colors.rasi <<-EOF
 		* {
-		    background:     ${element_bg};
+		    background:     ${background};
 		    background-alt: ${altbackground};
-		    foreground:     ${element_fg};
-		    selected:       ${element_hl};
+		    foreground:     ${foreground};
+		    selected:       ${accent};
 		    active:         ${color2};
 		    urgent:         ${color1};
 		}
@@ -116,7 +116,6 @@ apply_terminal() {
 
 	# kitty : colors
 	cat >${PATH_TERM}/colors.conf <<-_EOF_
-		## Colors configuration
 		background ${background}
 		foreground ${foreground}
 
@@ -194,19 +193,19 @@ apply_dunst() {
 	cat >>${PATH_BSPWM}/dunstrc <<-_EOF_
 		[urgency_low]
 		timeout = 2
-		background = "${element_bg}"
-		foreground = "${element_fg}"
-		frame_color = "${altbackground}"
+		background = "${background}"
+		foreground = "${foreground}"
+		frame_color = "${accent}"
 
 		[urgency_normal]
 		timeout = 5
-		background = "${element_bg}"
-		foreground = "${element_fg}"
-		frame_color = "${altbackground}"
+		background = "${background}"
+		foreground = "${foreground}"
+		frame_color = "${accent}"
 
 		[urgency_critical]
 		timeout = 0
-		background = "${element_bg}"
+		background = "${background}"
 		foreground = "${color1}"
 		frame_color = "${color1}"
 	_EOF_
@@ -292,7 +291,6 @@ apply_alacritty() {
 		white   = "${color15}"
 	_EOF_
 }
-
 ## Execute Script ---------------------------
 notify_user
 create_file

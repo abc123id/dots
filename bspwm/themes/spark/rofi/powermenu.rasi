@@ -18,16 +18,16 @@ USE_ICON=NO
 /*****----- Main Window -----*****/
 window {
     transparency:                "real";
-    location:                    south;
-    anchor:                      south;
+    location:                    southeast;
+    anchor:                      southeast;
     fullscreen:                  false;
-    width:                       400px;
-    x-offset:                    -10px;
-    y-offset:                    -48px;
+    width:                       800px;
+    x-offset:                    -15%;
+    y-offset:                    -68px;
     margin:                      0px;
     padding:                     0px;
     border:                      0px solid;
-    border-radius:               0px;
+    border-radius:               4px;
     border-color:                @selected;
     cursor:                      "default";
     background-color:            @background;
@@ -46,7 +46,7 @@ mainbox {
 /*****----- Inputbar -----*****/
 inputbar {
     enabled:                     true;
-    spacing:                     10px;
+    spacing:                     0px;
     padding:                     0px;
     border:                      0px;
     border-radius:               0px;
@@ -60,15 +60,17 @@ textbox-prompt-colon {
     enabled:                     true;
     expand:                      false;
     str:                         "";
-    border-radius:               0px;
-    background-color:            inherit;
-    text-color:                  inherit;
+    padding:                     10px 14px;
+    border-radius:               6px;
+    background-color:            @selected;
+    text-color:                  @background;
 }
 prompt {
     enabled:                     true;
+    padding:                     10px;
     border-radius:               0px;
-    background-color:            inherit;
-    text-color:                  inherit;
+    background-color:            @background;
+    text-color:                  @foreground;
 }
 
 /*****----- Message -----*****/
@@ -77,7 +79,7 @@ message {
     margin:                      0px;
     padding:                     10px;
     border:                      0px solid;
-    border-radius:               0px;
+    border-radius:               6px;
     border-color:                @selected;
     background-color:            @background-alt;
     text-color:                  @foreground;
@@ -92,8 +94,8 @@ textbox {
 /*****----- Listview -----*****/
 listview {
     enabled:                     true;
-    columns:                     2;
-    lines:                       3;
+    columns:                     6;
+    lines:                       1;
     cycle:                       true;
     scrollbar:                   false;
     layout:                      vertical;
@@ -108,7 +110,7 @@ element {
     enabled:                     true;
     padding:                     10px;
     border:                      0px solid;
-    border-radius:               0px;
+    border-radius:               6px;
     border-color:                @selected;
     background-color:            transparent;
     text-color:                  @foreground;

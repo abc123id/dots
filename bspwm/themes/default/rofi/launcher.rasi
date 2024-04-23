@@ -1,15 +1,15 @@
 /**
- * Copyright (C) 2020-2023 Aditya Shakya <adi1090x@gmail.com>
+ * Copyright (C) 2020-2024 Aditya Shakya <adi1090x@gmail.com>
  **/
 
 /*****----- Configuration -----*****/
 configuration {
 	modi:                       "drun,run,filebrowser,window";
     show-icons:                 true;
-    display-drun:               " プログラム";
-    display-run:                " 指示する";
-    display-filebrowser:        " ファイル";
-    display-window:             " 窓 ";
+    display-drun:               " Apps";
+    display-run:                " Run";
+    display-filebrowser:        " Files";
+    display-window:             " Windows";
 	drun-display-format:        "{name}";
 	window-format:              "{c} · {t}";
 }
@@ -121,7 +121,7 @@ entry {
     background-color:            inherit;
     text-color:                  inherit;
     cursor:                      text;
-    placeholder:                 "検索...";
+    placeholder:                 "Search...";
     placeholder-color:           inherit;
 }
 num-filtered-rows {
@@ -152,8 +152,8 @@ case-indicator {
 /*****----- Listview -----*****/
 listview {
     enabled:                     true;
-    columns:                     2;
-    lines:                       8;
+    columns:                     1;
+    lines:                       7;
     cycle:                       true;
     dynamic:                     true;
     scrollbar:                   true;
@@ -193,8 +193,7 @@ element {
     cursor:                      pointer;
 }
 element normal.normal {
-    
-    background-color:            transparent;
+    background-color:            var(normal-background);
     text-color:                  var(normal-foreground);
 }
 element normal.urgent {
@@ -218,7 +217,7 @@ element selected.active {
     text-color:                  var(selected-active-foreground);
 }
 element alternate.normal {
-    background-color:            transparent;
+    background-color:            var(alternate-normal-background);
     text-color:                  var(alternate-normal-foreground);
 }
 element alternate.urgent {

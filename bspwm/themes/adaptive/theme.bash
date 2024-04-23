@@ -5,31 +5,31 @@
 # ------------------------------------------------------------------------------
 
 # Colors
-background='#2D353B'
-foreground='#D3C6AA'
-color0='#343F44'
-color1='#E67E80'
-color2='#A7C080'
-color3='#DBBC7F'
-color4='#7FBBB3'
-color5='#D699B6'
-color6='#83C092'
+background='#222d32'
+foreground='#c4c7c5'
+color0='#263640'
+color1='#ec7875'
+color2='#61c766'
+color3='#fdd835'
+color4='#42a5f5'
+color5='#ba68c8'
+color6='#4dd0e1'
 color7='#bfbaac'
 color8='#4a697d'
-color9='#E67E80'
-color10='#A7C080'
-color11='#DBBC7F'
-color12='#7FBBB3'
-color13='#D699B6'
-color14='#83C092'
+color9='#fb8784'
+color10='#70d675'
+color11='#ffe744'
+color12='#51b4ff'
+color13='#c979d7'
+color14='#5cdff0'
 color15='#fdf6e3'
 
-accent='#7FBBB3'
+accent='#00BCD4'
 light_value='0.15'
 dark_value='0.30'
 
 # Wallpaper
-wdir="$(cd "$(dirname "${BASH_SOURCE[0]}")" &>/dev/null && pwd)"
+wdir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 wallpaper="$wdir/wallpaper"
 
 # Polybar
@@ -49,7 +49,7 @@ geany_font='JetBrains Mono 10'
 
 # Appearance
 gtk_font='Noto Sans 9'
-gtk_theme='Everforest-Dark-B'
+gtk_theme='Adapta-Nokto'
 icon_theme='Luv-Folders-Dark'
 cursor_theme='Vimix'
 

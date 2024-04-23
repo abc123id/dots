@@ -1,5 +1,5 @@
 /**
- * Copyright (C) 2020-2023 Aditya Shakya <adi1090x@gmail.com>
+ * Copyright (C) 2020-2024 Aditya Shakya <adi1090x@gmail.com>
  **/
 
 /*****----- Configuration -----*****/
@@ -52,7 +52,7 @@ window {
     enabled:                     true;
     margin:                      0px;
     padding:                     0px;
-    border:                      2px solid;
+    border:                      1px solid;
     border-radius:               0px;
     border-color:                @border-colour;
     cursor:                      "default";

@@ -1,8 +1,14 @@
-# hi
-ok so baasically,
-![catppuccin](https://preview.redd.it/zfxlzj7a3y5c1.png?width=1920&format=png&auto=webp&s=5c922ea4afbc553bd95dd4570c8028333da17ec9)
-dotfiles repo //
-most of this stuff is just configs, i barely understand basic designs sooo
->take anything you want
->have fun with it, idk how to use it tbh.
-~~thanks for the free labor, dread~~
+# Hello
+Wow, okay so this repo got updated and stuff but kinda just looked like garbage, so I've decided to pick it up again.
+The issue is that I use windows AND linux across three computers, being my two linux machines, one of which my main gaming laptop, and my dad's PC for windows. So since I use both types of system, I need to operate both software types in my repo, so it's a kinda big repo.
+My BSPWM dots and Qtile dots are just from archcraft, with some mods, so there isnt much. Otherwise, most stuff in there is universal.
+
+Sincerely,
+
+ █████╗ ██████╗  ██████╗ ██╗██████╗ ██████╗ ██╗██████╗       ██╗██████╗ 
+██╔══██╗██╔══██╗██╔════╝███║╚════██╗╚════██╗██║██╔══██╗     ██╔╝╚════██╗
+███████║██████╔╝██║     ╚██║ █████╔╝ █████╔╝██║██║  ██║    ██╔╝  █████╔╝
+██╔══██║██╔══██╗██║      ██║██╔═══╝  ╚═══██╗██║██║  ██║    ╚██╗  ╚═══██╗
+██║  ██║██████╔╝╚██████╗ ██║███████╗██████╔╝██║██████╔╝     ╚██╗██████╔╝
+╚═╝  ╚═╝╚═════╝  ╚═════╝ ╚═╝╚══════╝╚═════╝ ╚═╝╚═════╝       ╚═╝╚═════╝ 
+                                                                        

@@ -1,7 +1,5 @@
 .shell powershell
 
-# lmao fuck nigga sxhkd suck me sxhkweewee fucking losers lmao bspwm suck my dick AJAJAJJAJAJA
-# okay so now i use bspwm on arch linux
 # Reload whkd configuration
 alt + o                 : taskkill /f /im whkd.exe && start /b whkd # if shell is cmd
 # alt + o                 : taskkill /f /im whkd.exe && Start-Process whkd -WindowStyle hidden # if shell is pwsh / powershell
@@ -10,8 +8,8 @@ alt + shift + o         : komorebic reload-configuration
 # App shortcuts - these require shell to be pwsh / powershell
 # The apps will be focused if open, or launched if not open
 # alt + f                 : if ($wshell.AppActivate('Firefox') -eq $False) { start firefox }
-#### !! alt + b                 : if ($wshell.AppActivate('Thorium') -eq $False) { start Thorium }
-#### !! No fuck you i wanna spawn a shit ton of thorium windows i'll just use ahk instead loser
+#### !! alt + b                 : if ($wshell.AppActivate('Firefox') -eq $False) { start Thorium }
+# ! I'll use AHK instead
 # Focus windows
 alt + h                 : komorebic focus left
 alt + j                 : komorebic focus down
@@ -27,7 +25,7 @@ alt + shift + k         : komorebic move up
 alt + shift + l         : komorebic move right
 # alt + shift + return    : komorebic promote
 
-# Stack windows (LMAO FUCK STACKING WINDOWS)
+# Stack windows (I don't use stacking)
 # alt + left              : komorebic stack left
 # alt + down              : komorebic stack down
 # alt + up                : komorebic stack up
@@ -52,7 +50,7 @@ alt + shift + r         : komorebic retile
 # Fuck you you're using the tiler permanently loser
 
 # Layouts
-# Mf who uses this
+# I dont use this.
 alt + x                 : komorebic flip-layout horizontal
 alt + y                 : komorebic flip-layout vertical
 

@@ -17,3 +17,5 @@ gpu = "prime-discrete"
 
 [player.fflags]
 DFIntTaskSchedulerTargetFps = 60
+
+# Vinegar is dead.

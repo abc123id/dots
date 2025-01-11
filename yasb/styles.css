@@ -1,155 +1,278 @@
+/* 
+This is default and very simple styles file for Yasb. 
+For more information about configuration options, please visit the Wiki https://github.com/amnweb/yasb/wiki
+*/
+:root {
+    --base00: #000000;
+    --base01: #121212;
+    --base02: #222222;
+    --base03: #333333;
+    --base04: #999999;
+    --base05: #c1c1c1;
+    --base06: #999999;
+    --base07: #c1c1c1;
+    --base08: #5f8787;
+    --base09: #aaaaaa;
+    --base0A: #a06666;
+    --base0B: #dd9999;
+    --base0C: #aaaaaa;
+    --base0D: #888888;
+    --bade0E: #999999;
+    --base0F: #444444;
+}
+/* Global styles for ToolTip */
+QToolTip {
+    padding: 6px;
+    color: #cdd6f4;
+    font-size: 12px;
+    background-color: #1e1e2e;
+    border: 0px solid #313244;
+    border-radius: 6px;
+}
 * {
-  font-family:'JetBrainsMono NF';
-  font-size: 13px;
-  color: #ECEFF4;
+    font-size: 12px;
+    color: var(--base05);
+    font-weight: 600;
+    font-family: "JetBrainsMono NF";
+    margin: 0;
+    padding: 0;
 }
-.bar {
-  background: #1e1e2e;
-  border: 0px solid #A9B1D6;
-  border-radius: 0px;
-  margin: 0 0 0 0px;
-  padding: 0px;
+.yasb-bar {
+    padding: 0;
+    margin: 0;
+    background-color: var(--base01);
+    border-radius: 8px;
 }
-.komorebi-workspaces {
-margin: 0 0 0 0px;
-border-radius:0px;
-border: 0px solid #3B4252;
+.widget {
+    padding: 0 12px;
+    margin: 0;
 }
-.ws-btn {
-  color: #28283d;
-  padding: 2 0 0 0px;
-  background: rgba(59, 66, 82, 0.0);
-  border: 0px solid #A9B1D6;
-  font-size: 16px;
-  border-radius: 0px;
-  margin: 0 8 0 8px;
+.icon {
+    font-size: 16px;
 }
-.ws-btn:hover {
-  color: #cba6f7;
-  font-weight: bold;
+.widget .label {
+    padding: 0px 2px;
 }
-.ws-btn.populated {
-  font-style: italic;
-  color: #4f6fd8;
-}
-.ws-btn.active {
-  background: rgba(251, 241, 199, 0);
-  border-bottom-width: 2px;
-  border-color: #f5c2e7;
-  font-weight: bold;
-  color: #f5c2e7;
-}
-.container-right .label {
-  margin: 0px 07px 0px 0px;
-  color: #f38ba8;
-  border-radius: 0px;
-  background: rgba(0,0,0,0);
-  border: 0px solid #A9B1D6;
-  padding: 0px;
-}
-.wifi-widget .label {
-  color: #cba6f7;
-  margin: 0 0 0 7px
-}
-.cpu-widget .label {
-  background: #d3869b;
-}
-.traffic-widget .label {
-  color: #1E1E2E;
-  padding: 0 5 0 5px;
-  margin: 2px 0px 2px 0px;
-  background: #cba6f7;
-}
-.battery-widget .label.status-critical {
-  color: #f9e2af;
-}
-.battery-widget .label.status-low {
-  color: #f9e2af;
-}
-.battery-widget .label.status-medium {
-  color: #f9e2af;
-}
-.battery-widget .label.status-high {
-  color: #f9e2af;
-}
-.battery-widget .label.status-full {
-  color: #f9e2af;
-}
-.battery-widget .label.status-charging { 
- color: #f9e2af; 
-}
-.battery-widget .label {
-  margin: 0 7 0 5px;
-}
-.active-window-widget .label {
-  color: #1E1E2E;
-  padding: 0 5 0 5px;
-  margin: 2px 0px 2px 0px;
-  background: #89b4fa;
-}
-.custom-widget .label {
-  color: #74c7ec;
-  margin: 0 0 0 7px 
+.komorebi-active-layout {
+    padding: 0 4px 0 0;
 }
 .komorebi-active-layout .label {
-  color: #1E1E2E;
-  border: 0px solid #ECEFF4;
-  background: #f9e2af;
-  border-radius: 0px;
-  margin: 2px 7px 2px 7px; 
-  padding: 0 0 0 0px
+    font-weight: 600;
+    padding: 2px 0 0 0;
+}
+.apps-widget .widget-container,
+.komorebi-workspaces .widget-container,
+.komorebi-active-layout .widget-container {
+    background-color: var(--base01);
+    margin: 3px 0 3px 0;
+    border-radius: 12px;
+    border: 2px solid var(--base0F);
+}
+.komorebi-workspaces .widget-container {
+    border-radius: 12px;
+    margin-left: 4px;
+}
+.komorebi-workspaces {
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 14px;
+    padding: 0 4px 0 0;
+}
+.komorebi-workspaces .offline-status {
+    color: var(--base0B);
+    font-size: 12px;
+    padding: 0 0 0 4px;
+    font-weight: 600;
+}
+.komorebi-workspaces .ws-btn {
+    border: none;
+    background-color: transparent;
+    margin: 0;
+    font-size: 12px;
+    color: var(--base04);
+    height: 28px;
+    width: 18px;
+}
+.komorebi-workspaces .ws-btn:hover {
+    color: var(--base04);
+}
+.komorebi-workspaces .ws-btn.populated {
+    color: transparent;
+    width: 10px;
+    height: 10px;
+    background-color: var(--base0B);
+    border-radius: 5px;
+    margin: 0 4px;
+    font-size: 1px;
+}
+.komorebi-workspaces .ws-btn.active {
+    color: transparent;
+    background-color: var(--base0B);
+    width: 36px;
+    max-width: 36px;
+    height: 10px;
+    margin: 0 4px;
+    border-radius: 5px;
+}
+.apps-widget {
+    padding: 0 4px 0 2px;
+}
+.apps-widget .label {
+    font-size: 14px;
+    padding: 0 2px;
+    color: var(--base08);
+}
+.apps-widget .label:hover {
+    color: var(--base0A);
 }
 
-/*.container-right .label {
-/*margin: 0 0 0 0px;
-/*border-radius: 0px;
-/*background: rgba(0,0,0,0);
-/*border: 0px solid #E5E9F0;
-/*padding: 0px;
-/*} */
+.power-menu-widget .label {
+    color: var(--base0B);
+    font-size: 13px;
+}
+.power-menu-popup {
+    background-color: transparent
+}
+.power-menu-popup .button {
+    padding: 0;
+    width: 180px;
+    height: 230px;
+    border-radius: 8px;
+    background-color: var(--base01);
+    color: var(--base05);
+    border-left: 4px solid rgba(58, 59, 83, 0);
+    border-right: 4px solid rgba(58, 59, 83, 0);
+    border-top: 4px solid rgba(58, 59, 83, 0);
+    border-bottom: 4px solid rgba(58, 59, 83, 0);
+    margin: 0px;
+}
+.power-menu-popup .button.hover {
+    background-color: var(--base0F);
+    border-left: 4px solid var(--base04);
+    border-right: 4px solid var(--base04);
+    border-top: 4px solid var(--base04);
+    border-bottom: 4px solid var(--base04);
+}
 
-/*.container-left .widget {
-/*margin: 2 10 6px;
-/*border-radius: 0px;
-/*background: rgba(0,0,0,0);
-/*border: 0px solid #ECEFF4;
-/*padding: 0px;
-/*} */
+.power-menu-popup .button .label {
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--base05)
+}
+.power-menu-popup .button .icon {
+    font-size: 64px;
+    padding-top: 32px;
+    color: var(--base05)
+}
 
-/* .custom-widget.hostname-widget { */
-/*     background: #83a598; */
-/* } */
-/**/
-/* .custom-widget.terminal-widget { */
-/*     font-size: 14px; */
-/* } */
-
-/* .cpu-widget .label, */
-/* .memory-widget .label, */
-/* .battery-widget .label { */
-/*   padding: 2px 5px; */
-/*   font-size: 14px; */
-/*   border-radius: 5px; */
-/* } */
-/**/
-/* .memory-widget { */
-/*   margin: 0; */
-/* } */
-/**/
-/* .memory-widget .label.status-low { */
-/*   background: #689d6a; */
-/* } */
-/* .memory-widget .label.status-medium { */
-/*   background: #fe8019; */
-/* } */
-/* .memory-widget .label.status-high { */
-/*   background: #cc241d; */
-/* } */
-/* .active-window-widget .label {
-padding: -5px 7px 0 7px;
-color: #90817B;
-background: #3e4547;
-margin-bottom: -1px;
-border-radius: 3px;
-margin: 2px;
-} */
+.power-menu-popup .button.cancel .icon {
+    padding: 0;
+    margin: 0;
+}
+.power-menu-popup .button.cancel .label {
+    color: var(--base0A);
+    margin: 0;
+}
+.power-menu-popup .button.cancel {
+    height: 32px;
+    border-radius: 4px;
+}
+.uptime {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: var(--surface2);
+    font-weight: 600;
+}
+.microphone-widget {
+    padding: 0 6px 0 6px;
+}
+.microphone-widget .icon {
+    font-size: 18px;
+}
+.microphone-widget .icon {
+    color: var(--base0A);
+}
+.volume-widget .icon {
+    color: var(--base08);
+    margin: 1px 2px 0 0;
+}
+.weather-widget,
+.volume-widget {
+    padding: 0 6px;
+}
+.weather-widget .icon {
+    font-size: 18px;
+    margin: 0 2px 1px 0;
+    color: var(--base0A);
+}
+.media-widget {
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+}
+.media-widget .label {
+    color: var(--base05);
+    background-color: rgba(12, 12, 12, 0.7);
+    padding: 0px;
+    padding-right: 4px;
+    font-size: 12px;
+}
+.media-widget .label.maintext {
+    padding-top: 3px;
+}
+.media-widget .btn {
+    color: var(--base08);
+    padding: 0 1px;
+    margin: 0;
+    font-family: JetBrainsMono NF;
+    font-weight: 400;
+}
+.media-widget .btn:hover {
+    color: #babfd3;
+}
+.media-widget .btn.play {
+    font-size: 16px;
+}
+.media-widget .btn.disabled:hover,
+.media-widget .btn.disabled {
+    color: var(--base0D);
+    font-size: 12px;
+    background-color: rgba(0, 0, 0, 0);
+}
+.taskbar-widget {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+.taskbar-widget .app-icon {
+    padding: 0 6px;
+    border: none;
+    margin: 0;
+}
+.home-widget {
+    padding: 0 4px 0 12px;
+}
+.home-widget .icon {
+    color: var(--base08);
+}
+.home-widget .icon:hover {
+    color: var(--base05);
+}
+.home-menu {
+    background-color: var(--crust);
+}
+.home-menu .menu-item {
+    padding: 8px 48px 9px 16px;
+    font-size: 12px;
+    font-family: 'JetBrains Mono', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--base05);
+    font-weight: 600;
+}
+.home-menu .menu-item:hover {
+    background-color: rgb(44, 144 44);
+    color: var(--base08);
+}
+.home-menu:separator {
+    height: 1px;
+    background-color: var(--base0F);
+}

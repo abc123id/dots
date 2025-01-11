@@ -1,8 +1,8 @@
 .shell powershell
 
 # Reload whkd configuration
-alt + o                 : taskkill /f /im whkd.exe && start /b whkd # if shell is cmd
-# alt + o                 : taskkill /f /im whkd.exe && Start-Process whkd -WindowStyle hidden # if shell is pwsh / powershell
+# alt + o                 : taskkill /f /im whkd.exe && start /b whkd # if shell is cmd
+alt + o                 : taskkill /f /im whkd.exe; Start-Process whkd -WindowStyle hidden # if shell is pwsh / powershell
 alt + shift + o         : komorebic reload-configuration
 
 # App shortcuts - these require shell to be pwsh / powershell
@@ -23,7 +23,7 @@ alt + shift + h         : komorebic move left
 alt + shift + j         : komorebic move down
 alt + shift + k         : komorebic move up
 alt + shift + l         : komorebic move right
-# alt + shift + return    : komorebic promote
+alt + shift + return    : komorebic promote
 
 # Stack windows (I don't use stacking)
 # alt + left              : komorebic stack left
@@ -74,5 +74,10 @@ alt + shift + 6         : komorebic move-to-workspace 5
 alt + shift + 7         : komorebic move-to-workspace 6
 alt + shift + 8         : komorebic move-to-workspace 7
 alt + shift + 9         : komorebic move-to-workspace 8
+
+alt + q                 : komorebic close
+alt + m                 : komorebic minimize
+
+
 
 ---EOF---
